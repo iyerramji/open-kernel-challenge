@@ -1,0 +1,10 @@
+{
+  "results/modal-repeat1/v12_wide_native-timings.metadata.json": "fb6667796cbcfb91d77fada58c8722e67e595802b4abbd2c4c9205b30df1c796",
+  "results/modal-repeat1/modal.log": "b500ce4c00145565ca189055e4058a5b2024f7d84ad8806958e47072fc77c285",
+  "results/modal-repeat1/v24_tiny_unpooler-timings.metadata.json": "9a093b2af6540e2a94529f773d596df3b7b53005ba6360e4074c64924db1dcf8",
+  "results/modal-repeat1/v24_tiny_unpooler-timings.csv": "0ec4c277c76758ae81e2fd328e3c449a222adb4a629de8b7923e453715d770e7",
+  "results/modal-repeat1/v24_tiny_unpooler-bench.log": "aab1852cea5b7133ddbd1ec9d3d96f5caf71945b25a6ede24c45eb48b702820f",
+  "results/modal-repeat1/returned.json": "9e20b96b946b1b5f7f0bdbcb27002d5abd7c335367e52c857759c3e9a32a4b9f",
+  "results/modal-repeat1/v12_wide_native-timings.csv": "637351a87effadb6490794d7e2ce53d31c7b6998abefa7ad1c27ea7a82df98e9",
+  "results/modal-repeat1/v12_wide_native-bench.log": "c90989cbb509d95ed8a92c7c23ae44d91565429c49246a5f68c7de73ead69140"
+}

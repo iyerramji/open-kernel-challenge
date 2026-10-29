@@ -1,0 +1,26 @@
+{
+  "job": "969e9b707e4c4a67",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v15_quack_fixed_splitk.py",
+  "sha256": "e5d314c95445a29eb60743caa6e1fd07cc3a8c431e4a72bc4b67ad575ab20522",
+  "server_content_hash": "083dad6f4035adf57afdb1b24a1202a07cfaaead9b3d912d5d103a2414d52c61",
+  "passed": false,
+  "speedup": null,
+  "speedup_ci": null,
+  "error": null,
+  "created_at": 1793253560.506949,
+  "finished_at": 1793253600.09251,
+  "gpu": "H200",
+  "files": {
+    "result.json": "8e2b0cadbe313142fd57e648ec29a2c4213f44f59a5df5ab8df35c5a24a14fa0",
+    "submission.py": "e5d314c95445a29eb60743caa6e1fd07cc3a8c431e4a72bc4b67ad575ab20522",
+    "returned-log-tail.txt": "c7696c907f8b2ee30f3585664cb3f682a99a50d04306334650b84ae80e91a839",
+    "v15_quack_fixed_splitk.969e9b707e4c4a67.log": "c7696c907f8b2ee30f3585664cb3f682a99a50d04306334650b84ae80e91a839",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

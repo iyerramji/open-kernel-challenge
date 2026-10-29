@@ -1,0 +1,32 @@
+{
+  "job": "3951752bc54040f1",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v12_wide_native.py",
+  "sha256": "1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749",
+  "server_content_hash": "1ccdce84f0b84cd0413c878e7693ca0e8921f89624a3c61a1f2ed82ba8fbc6ad",
+  "passed": true,
+  "speedup": 1.1350280534880626,
+  "speedup_ci": [
+    1.1180026326857415,
+    1.1520534742903834
+  ],
+  "error": null,
+  "created_at": 1793252226.3940504,
+  "finished_at": 1793252304.8123617,
+  "gpu": "H200",
+  "files": {
+    "result.json": "29a44e274dad58d642fa347e408ac4e76542ef8380d54f6beb753f16ac918544",
+    "submission.py": "1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749",
+    "v12_wide_native.3951752bc54040f1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v12_wide_native.3951752bc54040f1.json": "7181f868f3af61071ea947975201080e7b2d549b0e551ffbbf48564849c71f44",
+    "returned-log-tail.txt": "3db680a8f9cec42c70fff21ed5ed17775f25f1f15d46c983d42c84cfb60d609f",
+    "shapes.csv": "024f83965a1d977cd5930ebb186a196c3b49b798cb18ea6ea722c819d07b79fe",
+    "v12_wide_native.3951752bc54040f1.txt": "4cfe5b6468fd291b893120b6ff6a9b95ac8c4de6d87ee3b43d5e77f83fd29a9b",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

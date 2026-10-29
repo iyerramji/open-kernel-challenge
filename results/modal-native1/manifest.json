@@ -1,0 +1,15 @@
+{
+  "v28_native_raw-validation.json": "6440beaaff85a1b5900be85124cb61294179be4f2cb7e5cd2e198782ad5b6fdd",
+  "plan.json": "90dbd4e560be3ca40b5e17f0b4307d95d177d2be4835856d8b275a55a7efde21",
+  "modal.log": "3db2b99a1fa05e4b4f5a31d3244a063f46f1dc7776fcfa55cce291abbd74e7ed",
+  "gate.json": "a6e45da8c39ad3e8ee51e5d50428e8b6bc4ab7cc30bf828624065ec7b09bc0f3",
+  "recommendation.txt": "f09a8636388b3105b7bbea2a2db24a195b8602126705b0f498aff6bfb64c822b",
+  "v28_native_raw-bench.log": "bc5261c4649584abb490f55b23ed5b412381092828d35582ddc97fa2f559c8a7",
+  "validate.py": "e9b22463be6d45c398f718d0145820e57ddbee6f491285f8c4da1285b288e1dc",
+  "modal_native1.py": "e39a7d087c52224af8a9511cf75cada2e107488e7806b58bd6c6ebd03320b4ca",
+  "v28_native_raw.py": "ba1818dc864212584e4dbac5db50c7c278824e8d36d39095257c1b378fd5775e",
+  "returned.json": "43bf5d8205be08a796cdfd62cb6370334505196345b4d28ba5499a6f5ef1ecd5",
+  "SGLANG_LICENSE": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+  "v28_native_raw-validate.log": "c5e6ba1ead6ab015c0de7b934e25ce8cdac5d80621bc2ed7db1ab8f7cbb73c24",
+  "native_gate.py": "b69e619b88f9a2ece06c4c8a7f558a02c7efbefc0a1e94e6037a209f523f9b9b"
+}

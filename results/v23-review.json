@@ -1,0 +1,15 @@
+{
+  "source": "/Users/ramjiiyer/Downloads/v13_bmm_splitk.py",
+  "candidate": "v23_bmm_splitk.py",
+  "sha256": "8cf3b893adfae1e7c5f0551180cd5de797525a3a6ae6af7126e158fd52391919",
+  "status": "read-only source review; GPU not run",
+  "official_runs": [],
+  "notes": [
+    "Batched cuBLAS inner GEMM differs from previous Triton/Quack split-K",
+    "FP32 partial accumulation indexing appears consistent, numerical error not guaranteed no worse",
+    "torch.allclose synchronizes during prepare, not timed kernel",
+    "Broad exception/random accuracy feature probe may silently fall back to v12",
+    "Views do not prove backend zero-copy or exactly two GPU kernels",
+    "Prior Quack pooler128 only1.01065x baseline, below v12~1.113x"
+  ]
+}

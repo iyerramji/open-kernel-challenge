@@ -1,0 +1,95 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-GQbrrtirwqrPD8IN6dpkJW
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_repeat1.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START v24_tiny_unpooler bench
+END v24_tiny_unpooler bench 0 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.48799965530634, 'baseline_us': 21.183999255299568, 'paired_speedup': 1.3689110926600474, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.55999833345413, 'baseline_us': 29.56799976527691, 'paired_speedup': 0.9120715940622259, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 14.25600005313754, 'baseline_us': 14.112000353634357, 'paired_speedup': 0.9898534212096206, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 37.05599904060364, 'baseline_us': 38.59199956059456, 'paired_speedup': 1.0441346839542933, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 34.32000055909157, 'baseline_us': 33.824000507593155, 'paired_speedup': 0.9877471522843411, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.35199971497059, 'baseline_us': 22.112000733613968, 'paired_speedup': 1.3511376071649948, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+2026-10-29 13:06:08,258 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START v12_wide_native bench
+END v12_wide_native bench 0  'baseline_us': 29.872000217437744, 'paired_speedup': 1.0333890697162142, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.39199985563755, 'baseline_us': 21.023999899625778, 'paired_speedup': 1.3625917194577184, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.52799995243549, 'baseline_us': 29.53599952161312, 'paired_speedup': 0.9102455470159357, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 14.303999952971935, 'baseline_us': 14.047999866306782, 'paired_speedup': 0.984072602633072, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 37.23200038075447, 'baseline_us': 38.60799968242645, 'paired_speedup': 1.0392370700041287, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 34.60799902677536, 'baseline_us': 33.824000507593155, 'paired_speedup': 0.9821616157665822, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.3199994713068, 'baseline_us': 22.064000368118286, 'paired_speedup': 1.354330638288218, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "v24_tiny_unpooler",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v24_tiny_unpooler.py",
+        "--reps",
+        "120",
+        "--output",
+        "/tmp/results/v24_tiny_unpooler-timings.csv"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v12_wide_native",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v12_wide_native.py",
+        "--reps",
+        "120",
+        "--output",
+        "/tmp/results/v12_wide_native-timings.csv"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 13:05:47 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   0000000A:00:00.0 Off |                    0 |\n| N/A   43C    P0             85W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 71.63736295700073
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-GQbrrtirwqrPD8IN6dpkJW

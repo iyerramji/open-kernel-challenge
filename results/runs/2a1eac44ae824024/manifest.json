@@ -1,0 +1,32 @@
+{
+  "job": "2a1eac44ae824024",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v11_layout_native.py",
+  "sha256": "a56bfd8e64c999a103b0fe14bb075aa4246335a3e8fd7c2bf2e2680a4abaf1a2",
+  "server_content_hash": "1629454683e04db17fa4a744b80be3118a77ce97225b5f16e8a381a1e76ef284",
+  "passed": true,
+  "speedup": 1.1289235400589204,
+  "speedup_ci": [
+    1.1119896869580366,
+    1.1458573931598042
+  ],
+  "error": null,
+  "created_at": 1793252137.055832,
+  "finished_at": 1793252212.824216,
+  "gpu": "H200",
+  "files": {
+    "v11_layout_native.2a1eac44ae824024.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "5ab70453b113bff8409c7b2cf4a65bb45dced7c91651ead1c30fd93ba8f526ee",
+    "submission.py": "a56bfd8e64c999a103b0fe14bb075aa4246335a3e8fd7c2bf2e2680a4abaf1a2",
+    "v11_layout_native.2a1eac44ae824024.txt": "d12ad33490a7e9440c539c24e300bae25f3c8de4a58cffbd7bd9e8861535caea",
+    "returned-log-tail.txt": "5724db6b3338534ab013a1d1c4efd786af15ce7765655d203ee27b83ae907cb6",
+    "shapes.csv": "cf0d45f76f1123a8544c17124d9beb1d5a7bfa7f76180ac97cdc80ff1c22d78d",
+    "v11_layout_native.2a1eac44ae824024.json": "6fd3c30d4236266fad45af9818bdf92bb0a204833cf517aef1c1954b66190adb",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

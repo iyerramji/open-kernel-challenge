@@ -1,0 +1,128 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-Pu5ugW9txc2gwJDLISTFup
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_native2.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/codec_gate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START v29_native_codec validate
+END v29_native_codec validate 0 _native_codec 256 o PASS
+v29_native_codec 256 pooler PASS
+v29_native_codec 256 unpooler PASS
+v29_native_codec 256 router PASS
+v29_native_codec 2 qkv_gate PASS
+v29_native_codec 2 o PASS
+v29_native_codec 2 pooler PASS
+v29_native_codec 2 unpooler PASS
+v29_native_codec 2 router PASS
+v29_native_codec 6 qkv_gate PASS
+v29_native_codec 6 o PASS
+v29_native_codec 6 pooler PASS
+v29_native_codec 6 unpooler PASS
+v29_native_codec 6 router PASS
+v29_native_codec 10 qkv_gate PASS
+v29_native_codec 10 o PASS
+v29_native_codec 10 pooler PASS
+v29_native_codec 10 unpooler PASS
+v29_native_codec 10 router PASS
+v29_native_codec 17 qkv_gate PASS
+v29_native_codec 17 o PASS
+v29_native_codec 17 pooler PASS
+v29_native_codec 17 unpooler PASS
+v29_native_codec 17 router PASS
+v29_native_codec 31 qkv_gate PASS
+v29_native_codec 31 o PASS
+v29_native_codec 31 pooler PASS
+v29_native_codec 31 unpooler PASS
+v29_native_codec 31 router PASS
+v29_native_codec 129 qkv_gate PASS
+v29_native_codec 129 o PASS
+v29_native_codec 129 pooler PASS
+v29_native_codec 129 unpooler PASS
+v29_native_codec 129 router PASS
+v29_native_codec 257 qkv_gate PASS
+v29_native_codec 257 o PASS
+v29_native_codec 257 pooler PASS
+v29_native_codec 257 unpooler PASS
+v29_native_codec 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 14:22:27,591 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START v29_native_codec bench
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "v29_native_codec",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v29_native_codec",
+        "--output",
+        "/tmp/results/v29_native_codec-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v29_native_codec",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/codec_gate.py"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 14:22:10 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:73:00.0 Off |                    0 |\n| N/A   29C    P0             76W /  700W |     130MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 122.90737986564636
+}
+END v29_native_codec bench 0 {"rounds": [{"ratio": 1.2780947968366916, "candidate_us": 32.048000022768974, "control_us": 25.008000433444977}, {"ratio": 1.2796195769245293, "candidate_us": 32.06399828195572, "control_us": 25.05600079894066}], "gate_pass": false, "fresh_graphs_pass": true}
+
+STDERR
+
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-Pu5ugW9txc2gwJDLISTFup

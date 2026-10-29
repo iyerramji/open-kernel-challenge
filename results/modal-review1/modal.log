@@ -1,0 +1,207 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-U7dCO57ex2MTqmqKm9umtc
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_review1.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/review_targeted.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START v31_router_native validate
+END v31_router_native validate 0 tive 256 pooler PASS
+v31_router_native 256 unpooler PASS
+v31_router_native 256 router PASS
+v31_router_native 2 qkv_gate PASS
+v31_router_native 2 o PASS
+v31_router_native 2 pooler PASS
+v31_router_native 2 unpooler PASS
+v31_router_native 2 router PASS
+v31_router_native 6 qkv_gate PASS
+v31_router_native 6 o PASS
+v31_router_native 6 pooler PASS
+v31_router_native 6 unpooler PASS
+v31_router_native 6 router PASS
+v31_router_native 10 qkv_gate PASS
+v31_router_native 10 o PASS
+v31_router_native 10 pooler PASS
+v31_router_native 10 unpooler PASS
+v31_router_native 10 router PASS
+v31_router_native 17 qkv_gate PASS
+v31_router_native 17 o PASS
+v31_router_native 17 pooler PASS
+v31_router_native 17 unpooler PASS
+v31_router_native 17 router PASS
+v31_router_native 31 qkv_gate PASS
+v31_router_native 31 o PASS
+v31_router_native 31 pooler PASS
+v31_router_native 31 unpooler PASS
+v31_router_native 31 router PASS
+v31_router_native 129 qkv_gate PASS
+v31_router_native 129 o PASS
+v31_router_native 129 pooler PASS
+v31_router_native 129 unpooler PASS
+v31_router_native 129 router PASS
+v31_router_native 257 qkv_gate PASS
+v31_router_native 257 o PASS
+v31_router_native 257 pooler PASS
+v31_router_native 257 unpooler PASS
+v31_router_native 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 14:53:45,751 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START v32_router_fma validate
+END v32_router_fma validate 0 _router_fma 8 router PASS
+v32_router_fma 128 qkv_gate PASS
+v32_router_fma 128 o PASS
+v32_router_fma 128 pooler PASS
+v32_router_fma 128 unpooler PASS
+v32_router_fma 128 router PASS
+v32_router_fma 256 qkv_gate PASS
+v32_router_fma 256 o PASS
+v32_router_fma 256 pooler PASS
+v32_router_fma 256 unpooler PASS
+v32_router_fma 256 router PASS
+v32_router_fma 2 qkv_gate PASS
+v32_router_fma 2 o PASS
+v32_router_fma 2 pooler PASS
+v32_router_fma 2 unpooler PASS
+v32_router_fma 2 router PASS
+v32_router_fma 6 qkv_gate PASS
+v32_router_fma 6 o PASS
+v32_router_fma 6 pooler PASS
+v32_router_fma 6 unpooler PASS
+v32_router_fma 6 router PASS
+v32_router_fma 10 qkv_gate PASS
+v32_router_fma 10 o PASS
+v32_router_fma 10 pooler PASS
+v32_router_fma 10 unpooler PASS
+v32_router_fma 10 router PASS
+v32_router_fma 17 qkv_gate PASS
+v32_router_fma 17 o PASS
+v32_router_fma 17 pooler PASS
+v32_router_fma 17 unpooler PASS
+v32_router_fma 17 router PASS
+v32_router_fma 31 qkv_gate PASS
+v32_router_fma 31 o PASS
+v32_router_fma 31 pooler PASS
+v32_router_fma 31 unpooler PASS
+v32_router_fma 31 router PASS
+v32_router_fma 129 qkv_gate PASS
+v32_router_fma 129 o PASS
+v32_router_fma 129 pooler PASS
+v32_router_fma 129 unpooler PASS
+v32_router_fma 129 router PASS
+v32_router_fma 257 qkv_gate PASS
+v32_router_fma 257 o PASS
+v32_router_fma 257 pooler PASS
+v32_router_fma 257 unpooler PASS
+v32_router_fma 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+
+START targeted bench
+END targeted bench 0 v31_router_native 1 [0.9679997618843006, 0.9578944689387314]
+v31_router_native 2 [2.529408141600446, 2.518182947351259]
+v31_router_native 6 [2.088584891929734, 2.092748212848116]
+v31_router_native 8 [1.9719157393661209, 1.9798788770958042]
+v32_router_fma 1 [0.9919136656783991, 0.9918919086866519]
+v32_router_fma 2 [0.9946524434533578, 0.9973261828178143]
+v32_router_fma 6 [0.9978378188476633, 0.9967669447145516]
+v32_router_fma 8 [1.0163599237991485, 1.0182925848175497]
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "v31_router_native",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v31_router_native",
+        "--output",
+        "/tmp/results/v31_router_native-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v32_router_fma",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v32_router_fma",
+        "--output",
+        "/tmp/results/v32_router_fma-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "targeted",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/review_targeted.py"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 14:53:24 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:59:00.0 Off |                    0 |\n| N/A   43C    P0             83W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 148.845960855484
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-U7dCO57ex2MTqmqKm9umtc

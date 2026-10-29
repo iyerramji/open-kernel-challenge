@@ -1,0 +1,32 @@
+{
+  "job": "b5024e063ec34b1b",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v22_flashinfer_tinygemm.py",
+  "sha256": "e7fcfb1fa362d5301648cc3909df5c3379a702b0b3a856a64433b00aa6c9219a",
+  "server_content_hash": "50678bf2cf1106e98299d92ca9a6495a66a0092981defdd8cd6f10dd409ab1bd",
+  "passed": true,
+  "speedup": 1.1362592079653853,
+  "speedup_ci": [
+    1.1192153198459045,
+    1.153303096084866
+  ],
+  "error": null,
+  "created_at": 1793258131.1070092,
+  "finished_at": 1793258221.637432,
+  "gpu": "H200",
+  "files": {
+    "result.json": "325f436671719bb3c77f71163ad33d1dfc2a289ef5ee93139bc92e3ed151edef",
+    "submission.py": "e7fcfb1fa362d5301648cc3909df5c3379a702b0b3a856a64433b00aa6c9219a",
+    "v22_flashinfer_tinygemm.b5024e063ec34b1b.txt": "e9e64aa33851c884e58d0ef75017c4f6d96e06a69a1f48adc5c472c209aa3803",
+    "returned-log-tail.txt": "fc51ec50da2bc56003e4437e57cf0cf905d4bb71cb7ad3cbcfee5e12c602f435",
+    "v22_flashinfer_tinygemm.b5024e063ec34b1b.json": "7e1372eaf934c9251f8661e965db65b4659ea50ff6ca8c022d8c8a5224d1874b",
+    "shapes.csv": "99b8995d80abf87db29df6525fa062e851ea004f241e50a1bb4d2fa0a65e63d3",
+    "v22_flashinfer_tinygemm.b5024e063ec34b1b.log": "8cccd5c9c61d9e3be7c2f870ac1edd348179b3a31f6619471ae3501b2268438e",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

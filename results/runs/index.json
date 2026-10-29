@@ -1,0 +1,374 @@
+[
+  {
+    "job": "14da83f6a21449d5",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v20_router_group4.py",
+    "sha256": "3fbdf8ec93a664f853ab04f3d84b1b670de9a5b22b0d3ee693596f80befc9e29",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1324504397463557,
+    "speedup_ci": [
+      1.1154636831501603,
+      1.149437196342551
+    ],
+    "error": null
+  },
+  {
+    "job": "1b4137234b3d4333",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v9_native_hopper.py",
+    "sha256": "d9c1ec7f5a7d2cadad48d799c9e121f57d4ac0a5ae9929ff83fd2fbd01ed0031",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.0648464655402783,
+    "speedup_ci": [
+      1.048873768557174,
+      1.0808191625233823
+    ],
+    "error": null
+  },
+  {
+    "job": "247425e7386843e5",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v21_safe_bundle.py",
+    "sha256": "9332a4e8c0bb4e0393835960558002aad96ffafeb1f419d3b9a7643a5d71a735",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.145181560408378,
+    "speedup_ci": [
+      1.1280038370022523,
+      1.1623592838145036
+    ],
+    "error": null
+  },
+  {
+    "job": "2a1eac44ae824024",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v11_layout_native.py",
+    "sha256": "a56bfd8e64c999a103b0fe14bb075aa4246335a3e8fd7c2bf2e2680a4abaf1a2",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1289235400589204,
+    "speedup_ci": [
+      1.1119896869580366,
+      1.1458573931598042
+    ],
+    "error": null
+  },
+  {
+    "job": "3951752bc54040f1",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v12_wide_native.py",
+    "sha256": "1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1350280534880626,
+    "speedup_ci": [
+      1.1180026326857415,
+      1.1520534742903834
+    ],
+    "error": null
+  },
+  {
+    "job": "3de1392800fb4fd1",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v6_router_splitk.py",
+    "sha256": "7e8c77bcbb650f180a602d28bbbcf8f177b3b2631e9d15523f4e1f479f4525af",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.0433383857944425,
+    "speedup_ci": [
+      1.0276883100075258,
+      1.058988461581359
+    ],
+    "error": null
+  },
+  {
+    "job": "433a8be9f5c14d37",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v21_safe_bundle.py",
+    "sha256": "9332a4e8c0bb4e0393835960558002aad96ffafeb1f419d3b9a7643a5d71a735",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1582640667146247,
+    "speedup_ci": [
+      1.1408901057139054,
+      1.175638027715344
+    ],
+    "error": null
+  },
+  {
+    "job": "5455e67879604de5",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v12_wide_native.py",
+    "sha256": "1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749",
+    "mode": "check",
+    "status": "duplicate",
+    "passed": null,
+    "speedup": null,
+    "speedup_ci": null,
+    "error": null
+  },
+  {
+    "job": "6ac516b77af64444",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v13_qkv_layout.py",
+    "sha256": "e79c50dd7818007a267999aff196d1ee5ab0f4ae3f373ebd91f65fd375345918",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1350194257704636,
+    "speedup_ci": [
+      1.1179941343839066,
+      1.1520447171570205
+    ],
+    "error": null
+  },
+  {
+    "job": "6ae7ccfd2e6f4648",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/racer/muse_bf16_proj/submission.py",
+    "sha256": "38d8430a903a8c9b19c903d30f88b4d743ceb716794a682a652a800b5dfba18f",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 0.7953278902219341,
+    "speedup_ci": [
+      0.783397971868605,
+      0.807257808575263
+    ],
+    "error": null
+  },
+  {
+    "job": "708758902e114c3a",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v17_layout_select.py",
+    "sha256": "4a8f1e42b6bca7c6bf88f5ae923ca0034d44930a09f3aa12456c7f1979ebaf89",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.12670826346503,
+    "speedup_ci": [
+      1.1098076395130545,
+      1.1436088874170054
+    ],
+    "error": null
+  },
+  {
+    "job": "764ac132f5224473",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v34_official_bundle.py",
+    "sha256": "16062dfacb087e6e7931809ee08e7fd49c76b0d00412f998a2fb6605b71b729c",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1560213464763613,
+    "speedup_ci": [
+      1.138681026279216,
+      1.1733616666735067
+    ],
+    "error": null
+  },
+  {
+    "job": "7e269cf271404c6b",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v16_quack_fixed_api.py",
+    "sha256": "0ac22d662474f9d0ae998d1ebc976bef1a6e18b217a427f8288d1c859e2bb4e9",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.0547616486153197,
+    "speedup_ci": [
+      1.0389402238860899,
+      1.0705830733445494
+    ],
+    "error": null
+  },
+  {
+    "job": "818293c2812c469e",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v20_router_group4.py",
+    "sha256": "3fbdf8ec93a664f853ab04f3d84b1b670de9a5b22b0d3ee693596f80befc9e29",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.146420381296951,
+    "speedup_ci": [
+      1.1292240755774967,
+      1.163616687016405
+    ],
+    "error": null
+  },
+  {
+    "job": "89611d34a31a4e91",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v7_tensor_splitk.py",
+    "sha256": "3fc39d6106a7a982b9c4dbc584efa3f88c72ed971993c9d46b10de615d59fba4",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 0.743910317651429,
+    "speedup_ci": [
+      0.7327516628866576,
+      0.7550689724162004
+    ],
+    "error": null
+  },
+  {
+    "job": "969e9b707e4c4a67",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v15_quack_fixed_splitk.py",
+    "sha256": "e5d314c95445a29eb60743caa6e1fd07cc3a8c431e4a72bc4b67ad575ab20522",
+    "mode": "check",
+    "status": "done",
+    "passed": false,
+    "speedup": null,
+    "speedup_ci": null,
+    "error": null
+  },
+  {
+    "job": "9a6da5bd038c414e",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v14_hopper_quack.py",
+    "sha256": "c531b36041515b987c664f0a632ef6430f5230dc53b302dffd7a40bb4dce44e7",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 0.9004642966982359,
+    "speedup_ci": [
+      0.8869573322477624,
+      0.9139712611487094
+    ],
+    "error": null
+  },
+  {
+    "job": "b5024e063ec34b1b",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v22_flashinfer_tinygemm.py",
+    "sha256": "e7fcfb1fa362d5301648cc3909df5c3379a702b0b3a856a64433b00aa6c9219a",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1362592079653853,
+    "speedup_ci": [
+      1.1192153198459045,
+      1.153303096084866
+    ],
+    "error": null
+  },
+  {
+    "job": "bc65b67e2cf64705",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v24_tiny_unpooler.py",
+    "sha256": "53f3f0228fbec7c0533e5bfe7ee839f49c6dc51effbb22dc7a3cd4b20eca1da7",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1442934641919418,
+    "speedup_ci": [
+      1.1271290622290626,
+      1.1614578661548207
+    ],
+    "error": null
+  },
+  {
+    "job": "be8e2f9477dd409f",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v19_quack_swap64.py",
+    "sha256": "105b7c29bf5383d5429f0ebf4b6f9dc85b622c7cacc67229707d319350d8660a",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.0742589718178985,
+    "speedup_ci": [
+      1.05814508724063,
+      1.090372856395167
+    ],
+    "error": null
+  },
+  {
+    "job": "c20ac75c8d374b01",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v18_weight_left.py",
+    "sha256": "71650c1604c898794e238e2f9b9d87f1859d9eb5b259320924282150b78e06ed",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1141074083285454,
+    "speedup_ci": [
+      1.0973957972036172,
+      1.1308190194534735
+    ],
+    "error": null
+  },
+  {
+    "job": "c8973da4cc39460c",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v8_packed_layout.py",
+    "sha256": "79877af99ddd936cf0ab1ac984e9651445ea6f8821dbd39b05e75df3b3ce452b",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1124593045793665,
+    "speedup_ci": [
+      1.095772415010676,
+      1.129146194148057
+    ],
+    "error": null
+  },
+  {
+    "job": "cdcb86c1ee9b4c0a",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v4_tiled_fused_router.py",
+    "sha256": "a622e3699128da6117bcfccc23d2108e81c5a593018f1ded153d9c743becde33",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 0.20280633461707065,
+    "speedup_ci": [
+      0.19976423959781459,
+      0.20584842963632669
+    ],
+    "error": null
+  },
+  {
+    "job": "d4fd3389b26f46d9",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v10_router_wide.py",
+    "sha256": "c2d07341282876b8e28787d7eae8e9a32c29f693b1deeb1f59484456c8192d15",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1261553643098214,
+    "speedup_ci": [
+      1.109263033845174,
+      1.1430476947744685
+    ],
+    "error": null
+  },
+  {
+    "job": "e93e60835ffb4770",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v12_wide_native.py",
+    "sha256": "1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1395992988172718,
+    "speedup_ci": [
+      1.1225053093350128,
+      1.1566932882995309
+    ],
+    "error": null
+  },
+  {
+    "job": "f494abe5f9f94394",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v33_qkv_lt_checked.py",
+    "sha256": "99ad615afaf62ec1af7dc94449fbaf7e87eb26138531f764a95aae6f99fd6263",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1413050190903227,
+    "speedup_ci": [
+      1.1241854438039678,
+      1.1584245943766773
+    ],
+    "error": null
+  },
+  {
+    "job": "f85b8fe876724e84",
+    "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v3_splitk_gemv.py",
+    "sha256": "45eb3c437864fbc3a60cca332be66213338f63f8775d0f3a3df6e06d7de74535",
+    "mode": "check",
+    "status": "done",
+    "passed": true,
+    "speedup": 0.8502392496439442,
+    "speedup_ci": [
+      0.837485660899285,
+      0.8629928383886032
+    ],
+    "error": null
+  }
+]

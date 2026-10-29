@@ -1,0 +1,88 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-oVf7q8nyV1yZBH6cFyPqW6
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_backends4.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/backend_final_repea
+│   t.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/backend_m8.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START backend_final_repeat bench
+END backend_final_repeat bench 0 24000099301338, "control_us": 15.552000142633915}], "gate_pass": true, "fresh_graphs_pass": true, "m": 128, "layer": "router", "load": "verify 16", "weight": 62, "seed": 225}
+{"rounds": [{"ratio": 0.8318713150040853, "candidate_us": 27.295999228954315, "control_us": 32.896000891923904}], "gate_pass": true, "fresh_graphs_pass": true, "m": 256, "layer": "qkv_gate", "load": "verify 32", "weight": 62, "seed": 226}
+{"rounds": [{"ratio": 0.9867108441896439, "candidate_us": 14.431999996304512, "control_us": 14.62399959564209}], "gate_pass": true, "fresh_graphs_pass": true, "m": 256, "layer": "o", "load": "verify 32", "weight": 62, "seed": 227}
+{"rounds": [{"ratio": 0.9969612622797208, "candidate_us": 37.42399998009205, "control_us": 37.76000067591667}], "gate_pass": true, "fresh_graphs_pass": true, "m": 256, "layer": "pooler", "load": "verify 32", "weight": 62, "seed": 228}
+{"rounds": [{"ratio": 0.9919570698925406, "candidate_us": 34.46400165557861, "control_us": 34.752000123262405}], "gate_pass": true, "fresh_graphs_pass": true, "m": 256, "layer": "unpooler", "load": "verify 32", "weight": 62, "seed": 229}
+{"rounds": [{"ratio": 1.015748281004846, "candidate_us": 16.543999314308167, "control_us": 16.287999227643013}], "gate_pass": true, "fresh_graphs_pass": true, "m": 256, "layer": "router", "load": "verify 32", "weight": 62, "seed": 230}
+
+STDERR
+2026-10-29 14:45:45,047 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START backend_m8 bench
+END backend_m8 bench 0 ": "original", "heuristic": 3, "correct": true, "candidate_us": 21.616000682115555, "control_us": 21.568000316619873, "algorithm_bytes": "42000000e60100002300000006000000020000000000000001000000000004000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "qkv_gate", "m": 8, "layout": "original", "heuristic": 4, "correct": true, "candidate_us": 23.264000192284584, "control_us": 21.568000316619873, "algorithm_bytes": "42000000860000002300000003000000020000000000000000000000000004000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "qkv_gate", "m": 8, "layout": "original", "heuristic": 5, "correct": true, "candidate_us": 22.47999981045723, "control_us": 21.503999829292297, "algorithm_bytes": "420000001b0000002300000004000000020000000000000000000000000004000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "qkv_gate", "m": 8, "layout": "original", "heuristic": 6, "correct": true, "candidate_us": 24.351999163627625, "control_us": 21.663999184966087, "algorithm_bytes": "42000000190200002300000006000000020000000000000001000000000004000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "qkv_gate", "m": 8, "layout": "original", "heuristic": 7, "correct": true, "candidate_us": 22.495999932289124, "control_us": 21.568000316619873, "algorithm_bytes": "42000000a40000002300000004000000020000000000000000000000000004000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "backend_final_repeat",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/backend_final_repeat.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "backend_m8",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/backend_m8.py"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 14:45:23 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:A5:00.0 Off |                    0 |\n| N/A   27C    P0             75W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 62.99726605415344
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-oVf7q8nyV1yZBH6cFyPqW6

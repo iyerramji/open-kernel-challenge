@@ -1,0 +1,347 @@
+[
+  {
+    "candidate": "v10_router_wide.py",
+    "sha256": "c2d07341282876b8e28787d7eae8e9a32c29f693b1deeb1f59484456c8192d15",
+    "snapshot": "results/code-versions/v10_router_wide-c2d07341282876b8e28787d7eae8e9a32c29f693b1deeb1f59484456c8192d15.py",
+    "official_runs": [
+      "d4fd3389b26f46d9"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v11_layout_native.py",
+    "sha256": "a56bfd8e64c999a103b0fe14bb075aa4246335a3e8fd7c2bf2e2680a4abaf1a2",
+    "snapshot": "results/code-versions/v11_layout_native-a56bfd8e64c999a103b0fe14bb075aa4246335a3e8fd7c2bf2e2680a4abaf1a2.py",
+    "official_runs": [
+      "2a1eac44ae824024"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v12_wide_native.py",
+    "sha256": "1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749",
+    "snapshot": "results/code-versions/v12_wide_native-1891556cd61af2cab26feff9e8c408a6a995fb84d3dbd48293a02552efc17749.py",
+    "official_runs": [
+      "3951752bc54040f1",
+      "5455e67879604de5",
+      "e93e60835ffb4770"
+    ],
+    "gpu_status": "Passed official scored screening/correctness; see scored_runs and separate Modal evidence",
+    "scored_runs": [
+      "e93e60835ffb4770"
+    ]
+  },
+  {
+    "candidate": "v13_qkv_layout.py",
+    "sha256": "e79c50dd7818007a267999aff196d1ee5ab0f4ae3f373ebd91f65fd375345918",
+    "snapshot": "results/code-versions/v13_qkv_layout-e79c50dd7818007a267999aff196d1ee5ab0f4ae3f373ebd91f65fd375345918.py",
+    "official_runs": [
+      "6ac516b77af64444"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v14_hopper_quack.py",
+    "sha256": "c531b36041515b987c664f0a632ef6430f5230dc53b302dffd7a40bb4dce44e7",
+    "snapshot": "results/code-versions/v14_hopper_quack-c531b36041515b987c664f0a632ef6430f5230dc53b302dffd7a40bb4dce44e7.py",
+    "official_runs": [
+      "9a6da5bd038c414e"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v15_quack_fixed_splitk.py",
+    "sha256": "e5d314c95445a29eb60743caa6e1fd07cc3a8c431e4a72bc4b67ad575ab20522",
+    "snapshot": "results/code-versions/v15_quack_fixed_splitk-e5d314c95445a29eb60743caa6e1fd07cc3a8c431e4a72bc4b67ad575ab20522.py",
+    "official_runs": [
+      "969e9b707e4c4a67"
+    ],
+    "gpu_status": "failed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v16_quack_fixed_api.py",
+    "sha256": "0ac22d662474f9d0ae998d1ebc976bef1a6e18b217a427f8288d1c859e2bb4e9",
+    "snapshot": "results/code-versions/v16_quack_fixed_api-0ac22d662474f9d0ae998d1ebc976bef1a6e18b217a427f8288d1c859e2bb4e9.py",
+    "official_runs": [
+      "7e269cf271404c6b"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v17_layout_select.py",
+    "sha256": "4a8f1e42b6bca7c6bf88f5ae923ca0034d44930a09f3aa12456c7f1979ebaf89",
+    "snapshot": "results/code-versions/v17_layout_select-4a8f1e42b6bca7c6bf88f5ae923ca0034d44930a09f3aa12456c7f1979ebaf89.py",
+    "official_runs": [
+      "708758902e114c3a"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v18_weight_left.py",
+    "sha256": "71650c1604c898794e238e2f9b9d87f1859d9eb5b259320924282150b78e06ed",
+    "snapshot": "results/code-versions/v18_weight_left-71650c1604c898794e238e2f9b9d87f1859d9eb5b259320924282150b78e06ed.py",
+    "official_runs": [
+      "c20ac75c8d374b01"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v19_quack_swap64.py",
+    "sha256": "105b7c29bf5383d5429f0ebf4b6f9dc85b622c7cacc67229707d319350d8660a",
+    "snapshot": "results/code-versions/v19_quack_swap64-105b7c29bf5383d5429f0ebf4b6f9dc85b622c7cacc67229707d319350d8660a.py",
+    "official_runs": [
+      "be8e2f9477dd409f"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v1_torch_split_router.py",
+    "sha256": "40ba7113045dc1b5f02e6ea85f3425d73328827ccf5720397a9ec19a093906a2",
+    "snapshot": "results/code-versions/v1_torch_split_router-40ba7113045dc1b5f02e6ea85f3425d73328827ccf5720397a9ec19a093906a2.py",
+    "official_runs": [],
+    "gpu_status": "not GPU tested",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v20_router_group4.py",
+    "sha256": "3fbdf8ec93a664f853ab04f3d84b1b670de9a5b22b0d3ee693596f80befc9e29",
+    "snapshot": "results/code-versions/v20_router_group4-3fbdf8ec93a664f853ab04f3d84b1b670de9a5b22b0d3ee693596f80befc9e29.py",
+    "official_runs": [
+      "818293c2812c469e",
+      "14da83f6a21449d5"
+    ],
+    "gpu_status": "Passed official scored screening/correctness; see scored_runs and separate Modal evidence",
+    "scored_runs": [
+      "14da83f6a21449d5"
+    ]
+  },
+  {
+    "candidate": "v21_safe_bundle.py",
+    "sha256": "9332a4e8c0bb4e0393835960558002aad96ffafeb1f419d3b9a7643a5d71a735",
+    "snapshot": "results/code-versions/v21_safe_bundle-9332a4e8c0bb4e0393835960558002aad96ffafeb1f419d3b9a7643a5d71a735.py",
+    "official_runs": [
+      "247425e7386843e5",
+      "433a8be9f5c14d37"
+    ],
+    "gpu_status": "Passed official scored screening/correctness; see scored_runs and separate Modal evidence",
+    "scored_runs": [
+      "433a8be9f5c14d37"
+    ]
+  },
+  {
+    "candidate": "v22_flashinfer_tinygemm.py",
+    "sha256": "e7fcfb1fa362d5301648cc3909df5c3379a702b0b3a856a64433b00aa6c9219a",
+    "snapshot": "results/code-versions/v22_flashinfer_tinygemm-e7fcfb1fa362d5301648cc3909df5c3379a702b0b3a856a64433b00aa6c9219a.py",
+    "official_runs": [
+      "b5024e063ec34b1b"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v2_direct_gemv.py",
+    "sha256": "38d8430a903a8c9b19c903d30f88b4d743ceb716794a682a652a800b5dfba18f",
+    "snapshot": "results/code-versions/v2_direct_gemv-38d8430a903a8c9b19c903d30f88b4d743ceb716794a682a652a800b5dfba18f.py",
+    "official_runs": [
+      "6ae7ccfd2e6f4648"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v3_splitk_gemv.py",
+    "sha256": "45eb3c437864fbc3a60cca332be66213338f63f8775d0f3a3df6e06d7de74535",
+    "snapshot": "results/code-versions/v3_splitk_gemv-45eb3c437864fbc3a60cca332be66213338f63f8775d0f3a3df6e06d7de74535.py",
+    "official_runs": [
+      "f85b8fe876724e84"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v4_tiled_fused_router.py",
+    "sha256": "a622e3699128da6117bcfccc23d2108e81c5a593018f1ded153d9c743becde33",
+    "snapshot": "results/code-versions/v4_tiled_fused_router-a622e3699128da6117bcfccc23d2108e81c5a593018f1ded153d9c743becde33.py",
+    "official_runs": [
+      "cdcb86c1ee9b4c0a"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v5_hybrid_persistent.py",
+    "sha256": "8a20e68574d6d4bb01f0f41abec28ab9e4b6811866dfd074b611d32b190de223",
+    "snapshot": "results/code-versions/v5_hybrid_persistent-8a20e68574d6d4bb01f0f41abec28ab9e4b6811866dfd074b611d32b190de223.py",
+    "official_runs": [],
+    "gpu_status": "not GPU tested",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v6_router_splitk.py",
+    "sha256": "7e8c77bcbb650f180a602d28bbbcf8f177b3b2631e9d15523f4e1f479f4525af",
+    "snapshot": "results/code-versions/v6_router_splitk-7e8c77bcbb650f180a602d28bbbcf8f177b3b2631e9d15523f4e1f479f4525af.py",
+    "official_runs": [
+      "3de1392800fb4fd1"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v7_tensor_splitk.py",
+    "sha256": "3fc39d6106a7a982b9c4dbc584efa3f88c72ed971993c9d46b10de615d59fba4",
+    "snapshot": "results/code-versions/v7_tensor_splitk-3fc39d6106a7a982b9c4dbc584efa3f88c72ed971993c9d46b10de615d59fba4.py",
+    "official_runs": [
+      "89611d34a31a4e91"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v8_packed_layout.py",
+    "sha256": "79877af99ddd936cf0ab1ac984e9651445ea6f8821dbd39b05e75df3b3ce452b",
+    "snapshot": "results/code-versions/v8_packed_layout-79877af99ddd936cf0ab1ac984e9651445ea6f8821dbd39b05e75df3b3ce452b.py",
+    "official_runs": [
+      "c8973da4cc39460c"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v9_native_hopper.py",
+    "sha256": "d9c1ec7f5a7d2cadad48d799c9e121f57d4ac0a5ae9929ff83fd2fbd01ed0031",
+    "snapshot": "results/code-versions/v9_native_hopper-d9c1ec7f5a7d2cadad48d799c9e121f57d4ac0a5ae9929ff83fd2fbd01ed0031.py",
+    "official_runs": [
+      "1b4137234b3d4333"
+    ],
+    "gpu_status": "passed official check",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v23_bmm_splitk.py",
+    "sha256": "8cf3b893adfae1e7c5f0551180cd5de797525a3a6ae6af7126e158fd52391919",
+    "snapshot": "results/code-versions/v23_bmm_splitk-8cf3b893adfae1e7c5f0551180cd5de797525a3a6ae6af7126e158fd52391919.py",
+    "official_runs": [],
+    "gpu_status": "not GPU tested; AST/source review only",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v24_tiny_unpooler.py",
+    "sha256": "53f3f0228fbec7c0533e5bfe7ee839f49c6dc51effbb22dc7a3cd4b20eca1da7",
+    "snapshot": "results/code-versions/v24_tiny_unpooler-53f3f0228fbec7c0533e5bfe7ee839f49c6dc51effbb22dc7a3cd4b20eca1da7.py",
+    "official_runs": [
+      "bc65b67e2cf64705"
+    ],
+    "gpu_status": "Passed official scored screening/correctness; see scored_runs and separate Modal evidence",
+    "modal_results": "results/modal-resume1",
+    "scored_runs": [
+      "bc65b67e2cf64705"
+    ]
+  },
+  {
+    "candidate": "v25_bmm_explicit.py",
+    "sha256": "1491bdd2d7e7ef2080655c5c7cd36caae8e28f41de08fc591b7145ed06d5daf3",
+    "snapshot": "results/code-versions/v25_bmm_explicit-1491bdd2d7e7ef2080655c5c7cd36caae8e28f41de08fc591b7145ed06d5daf3.py",
+    "official_runs": [],
+    "gpu_status": "passed Modal diagnostic correctness and fresh-input graphs",
+    "modal_results": "results/modal-resume1",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v26_codec_pooler.py",
+    "sha256": "55784ebd66d4e79f3790fbfebe2e9e8161ddc254702eeee5cb5ea12ea47f2b09",
+    "snapshot": "results/code-versions/v26_codec_pooler-55784ebd66d4e79f3790fbfebe2e9e8161ddc254702eeee5cb5ea12ea47f2b09.py",
+    "official_runs": [],
+    "gpu_status": "Modal correctness and graph passed; slower than v24",
+    "modal_results": "results/modal-codec1",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v27_raw_pooler_control.py",
+    "sha256": "06e8f68928e7cc8a2f287becd13d77cf248dd5215471f751991f76210f942964",
+    "snapshot": "results/code-versions/v27_raw_pooler_control-06e8f68928e7cc8a2f287becd13d77cf248dd5215471f751991f76210f942964.py",
+    "official_runs": [],
+    "gpu_status": "Modal correctness and graph passed; slower than v24",
+    "modal_results": "results/modal-codec1",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v28_native_raw.py",
+    "sha256": "ba1818dc864212584e4dbac5db50c7c278824e8d36d39095257c1b378fd5775e",
+    "snapshot": "results/code-versions/v28_native_raw-ba1818dc864212584e4dbac5db50c7c278824e8d36d39095257c1b378fd5775e.py",
+    "official_runs": [],
+    "gpu_status": "Passed full validation and raw paired timing gate",
+    "modal_results": "results/modal-native1",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v29_native_codec.py",
+    "sha256": "949d287f31f25b4027875c9bdfd2280af4486056380192f794f3ced73831eeac",
+    "snapshot": "results/code-versions/v29_native_codec-949d287f31f25b4027875c9bdfd2280af4486056380192f794f3ced73831eeac.py",
+    "official_runs": [],
+    "gpu_status": "Passed full validation; compressed target about28% slower; retired",
+    "modal_results": "results/modal-native2",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v30_qkv_lt.py",
+    "sha256": "712ea7527dc71824fa9024d8b6f753faacc18f1857c93f7718ed0d6f520d189c",
+    "snapshot": "results/code-versions/v30_qkv_lt-712ea7527dc71824fa9024d8b6f753faacc18f1857c93f7718ed0d6f520d189c.py",
+    "official_runs": [],
+    "gpu_status": "Full validation passed; paired aggregate1.010833x v24 on Modal; official quota0",
+    "modal_results": "results/modal-backends3; results/modal-backends4",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v31_router_native.py",
+    "sha256": "09954198a82501e4b5751c61330eec751f675c7caea83f6e31ceb12d2d7d531c",
+    "snapshot": "results/code-versions/v31_router_native-09954198a82501e4b5751c61330eec751f675c7caea83f6e31ceb12d2d7d531c.py",
+    "official_runs": [],
+    "gpu_status": "Full GPU validation passed; multi-token router slower, rejected",
+    "modal_results": "results/modal-review1",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v32_router_fma.py",
+    "sha256": "5d37508a2f32724ad9609d6f5491d85b1b914dda9344c4cd3b5606044180eceb",
+    "snapshot": "results/code-versions/v32_router_fma-5d37508a2f32724ad9609d6f5491d85b1b914dda9344c4cd3b5606044180eceb.py",
+    "official_runs": [],
+    "gpu_status": "Full GPU validation passed; no material aggregate winner",
+    "modal_results": "results/modal-review1",
+    "scored_runs": []
+  },
+  {
+    "candidate": "v33_qkv_lt_checked.py",
+    "sha256": "99ad615afaf62ec1af7dc94449fbaf7e87eb26138531f764a95aae6f99fd6263",
+    "snapshot": "results/code-versions/v33_qkv_lt_checked-99ad615afaf62ec1af7dc94449fbaf7e87eb26138531f764a95aae6f99fd6263.py",
+    "official_runs": [
+      "f494abe5f9f94394"
+    ],
+    "gpu_status": "Passed official scored screening/correctness; see scored_runs and separate Modal evidence",
+    "modal_results": "results/modal-review2",
+    "scored_runs": [
+      "f494abe5f9f94394"
+    ]
+  },
+  {
+    "candidate": "v34_official_bundle.py",
+    "sha256": "16062dfacb087e6e7931809ee08e7fd49c76b0d00412f998a2fb6605b71b729c",
+    "snapshot": "results/code-versions/v34_official_bundle-16062dfacb087e6e7931809ee08e7fd49c76b0d00412f998a2fb6605b71b729c.py",
+    "official_runs": [
+      "764ac132f5224473"
+    ],
+    "scored_runs": [
+      "764ac132f5224473"
+    ],
+    "gpu_status": "Passed full Modal validation and official scored entry; 1.156021x official",
+    "modal_results": "results/modal-scored-bundle"
+  }
+]

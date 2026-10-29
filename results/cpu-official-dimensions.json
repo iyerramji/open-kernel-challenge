@@ -1,0 +1,678 @@
+{
+  "device": "cpu",
+  "torch": "2.15.0",
+  "cuda": null,
+  "gpu_kernels_executed": false,
+  "records": [
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 8.200e-05 (worst row 8.200e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 7,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 2.586e-05 (worst row 6.178e-05); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 33,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 3.946e-06 (worst row 2.199e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 130,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.562e-05 (worst row 8.884e-05); 18 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 5,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.694e-06 (worst row 3.785e-06)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 8,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.507e-06 (worst row 1.726e-06); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 9,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.535e-06 (worst row 1.693e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 512,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 2.735e-05 (worst row 2.344e-04); 75 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1000,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.038e-05 (worst row 2.347e-04); 124 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 1,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.191e-07 (worst row 1.191e-07)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 16,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 5.470e-06 (worst row 2.092e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 16,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 2.428e-05 (worst row 9.619e-05); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 16,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.019e-06 (worst row 3.802e-06); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 16,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.410e-06 (worst row 5.379e-06); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 16,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.572e-06 (worst row 1.730e-06); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 32,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 2.287e-05 (worst row 8.089e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 32,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 2.184e-05 (worst row 8.993e-05); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 32,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 5.958e-06 (worst row 2.990e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 32,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 2.190e-05 (worst row 8.476e-05); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 32,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.647e-06 (worst row 1.902e-06); 6 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 8,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 8,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 7.564e-06 (worst row 2.168e-05); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 8,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 5.801e-06 (worst row 1.532e-05); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 8,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 8,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.626e-06 (worst row 1.716e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 128,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 1.773e-05 (worst row 1.610e-04); 14 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 128,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 9.563e-06 (worst row 8.749e-05); 11 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 128,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.623e-05 (worst row 1.188e-04); 17 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 128,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.401e-05 (worst row 8.698e-05); 22 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 128,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.553e-06 (worst row 1.860e-06); 23 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 256,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 1.853e-05 (worst row 1.647e-04); 37 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 256,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 1.276e-05 (worst row 9.910e-05); 31 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 256,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.652e-05 (worst row 1.259e-04); 45 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 256,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 9.362e-06 (worst row 8.490e-05); 35 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 256,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.557e-06 (worst row 1.879e-06); 32 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 2,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 4.656e-06 (worst row 6.582e-06)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 2,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 3.547e-05 (worst row 4.504e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 2,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 2,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.000e-06 (worst row 1.360e-06)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 2,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.642e-06 (worst row 1.643e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 6,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 2.983e-05 (worst row 6.157e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 6,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 6.482e-06 (worst row 1.678e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 6,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.309e-06 (worst row 2.480e-06); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 6,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.492e-05 (worst row 3.960e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 6,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.597e-06 (worst row 1.869e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 10,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 1.895e-05 (worst row 4.954e-05); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 10,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 8.757e-06 (worst row 1.985e-05); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 10,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 4.180e-07 (worst row 1.253e-06); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 10,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.201e-05 (worst row 5.456e-05); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 10,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.583e-06 (worst row 1.737e-06); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 17,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 1.016e-06 (worst row 3.177e-06); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 17,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 9.147e-07 (worst row 2.918e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 17,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.186e-05 (worst row 7.471e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 17,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.093e-05 (worst row 5.576e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 17,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.638e-06 (worst row 1.919e-06); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 31,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 2.631e-05 (worst row 1.129e-04); 8 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 31,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 1.861e-05 (worst row 7.565e-05); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 31,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.568e-05 (worst row 7.601e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 31,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 7.481e-06 (worst row 2.885e-05); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 31,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.640e-06 (worst row 2.063e-06); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 129,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 2.897e-05 (worst row 1.933e-04); 16 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 129,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 1.787e-05 (worst row 1.165e-04); 15 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 129,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.659e-05 (worst row 1.656e-04); 13 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 129,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.062e-05 (worst row 1.095e-04); 16 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 129,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.546e-06 (worst row 1.899e-06); 22 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 257,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 2.468e-05 (worst row 2.035e-04); 39 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 257,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 2.120e-05 (worst row 2.141e-04); 26 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 257,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 2.521e-05 (worst row 1.621e-04); 35 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 257,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.871e-05 (worst row 1.308e-04); 26 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v1_torch_split_router",
+      "device": "cpu",
+      "m": 257,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 1.674e-06 (worst row 2.075e-06); 27 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "check": "CPU router BF16 hi/lo algebra: relative L2 error 2.611e-06 (worst row 2.813e-06); 1 probe rows exact to 2.2e-06"
+    }
+  ],
+  "count": 75
+}

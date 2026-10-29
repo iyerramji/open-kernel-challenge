@@ -1,0 +1,82 @@
+[
+  {
+    "m": 128,
+    "heuristic": 0,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 1,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 2,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 3,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 4,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 5,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 6,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 128,
+    "heuristic": 7,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 0,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 1,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 2,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 3,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 4,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 5,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 6,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  },
+  {
+    "m": 256,
+    "heuristic": 7,
+    "error": "argument 14: TypeError: 'c_void_p' object cannot be interpreted as an integer"
+  }
+]

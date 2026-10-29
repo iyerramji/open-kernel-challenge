@@ -1,0 +1,83 @@
+v25_bmm_explicit 1 qkv_gate PASS
+v25_bmm_explicit 7 pooler PASS
+v25_bmm_explicit 33 o PASS
+v25_bmm_explicit 130 unpooler PASS
+v25_bmm_explicit 5 unpooler PASS
+v25_bmm_explicit 8 router PASS
+v25_bmm_explicit 9 router PASS
+v25_bmm_explicit 512 qkv_gate PASS
+v25_bmm_explicit 1000 unpooler PASS
+v25_bmm_explicit 1 qkv_gate PASS
+v25_bmm_explicit 1 o PASS
+v25_bmm_explicit 1 pooler PASS
+v25_bmm_explicit 1 unpooler PASS
+v25_bmm_explicit 1 router PASS
+v25_bmm_explicit 16 qkv_gate PASS
+v25_bmm_explicit 16 o PASS
+v25_bmm_explicit 16 pooler PASS
+v25_bmm_explicit 16 unpooler PASS
+v25_bmm_explicit 16 router PASS
+v25_bmm_explicit 32 qkv_gate PASS
+v25_bmm_explicit 32 o PASS
+v25_bmm_explicit 32 pooler PASS
+v25_bmm_explicit 32 unpooler PASS
+v25_bmm_explicit 32 router PASS
+v25_bmm_explicit 8 qkv_gate PASS
+v25_bmm_explicit 8 o PASS
+v25_bmm_explicit 8 pooler PASS
+v25_bmm_explicit 8 unpooler PASS
+v25_bmm_explicit 8 router PASS
+v25_bmm_explicit 128 qkv_gate PASS
+v25_bmm_explicit 128 o PASS
+v25_bmm_explicit 128 pooler PASS
+v25_bmm_explicit 128 unpooler PASS
+v25_bmm_explicit 128 router PASS
+v25_bmm_explicit 256 qkv_gate PASS
+v25_bmm_explicit 256 o PASS
+v25_bmm_explicit 256 pooler PASS
+v25_bmm_explicit 256 unpooler PASS
+v25_bmm_explicit 256 router PASS
+v25_bmm_explicit 2 qkv_gate PASS
+v25_bmm_explicit 2 o PASS
+v25_bmm_explicit 2 pooler PASS
+v25_bmm_explicit 2 unpooler PASS
+v25_bmm_explicit 2 router PASS
+v25_bmm_explicit 6 qkv_gate PASS
+v25_bmm_explicit 6 o PASS
+v25_bmm_explicit 6 pooler PASS
+v25_bmm_explicit 6 unpooler PASS
+v25_bmm_explicit 6 router PASS
+v25_bmm_explicit 10 qkv_gate PASS
+v25_bmm_explicit 10 o PASS
+v25_bmm_explicit 10 pooler PASS
+v25_bmm_explicit 10 unpooler PASS
+v25_bmm_explicit 10 router PASS
+v25_bmm_explicit 17 qkv_gate PASS
+v25_bmm_explicit 17 o PASS
+v25_bmm_explicit 17 pooler PASS
+v25_bmm_explicit 17 unpooler PASS
+v25_bmm_explicit 17 router PASS
+v25_bmm_explicit 31 qkv_gate PASS
+v25_bmm_explicit 31 o PASS
+v25_bmm_explicit 31 pooler PASS
+v25_bmm_explicit 31 unpooler PASS
+v25_bmm_explicit 31 router PASS
+v25_bmm_explicit 129 qkv_gate PASS
+v25_bmm_explicit 129 o PASS
+v25_bmm_explicit 129 pooler PASS
+v25_bmm_explicit 129 unpooler PASS
+v25_bmm_explicit 129 router PASS
+v25_bmm_explicit 257 qkv_gate PASS
+v25_bmm_explicit 257 o PASS
+v25_bmm_explicit 257 pooler PASS
+v25_bmm_explicit 257 unpooler PASS
+v25_bmm_explicit 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR

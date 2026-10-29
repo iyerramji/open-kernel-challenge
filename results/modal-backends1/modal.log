@@ -1,0 +1,87 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-5p90OEU3epDhI92sl6pKw0
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_backends1.py
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/backend_cudnn.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/backend_lt.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START backend_cudnn bench
+END backend_cudnn bench 0 time-api/group__CUDART__TYPES.html for more information.\n"}
+{'layer': 'qkv_gate', 'm': 256, 'error': "CUDA error: operation failed due to a previous error during capture\nSearch for `cudaErrorStreamCaptureInvalidated' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\n"}
+{'layer': 'unpooler', 'm': 16, 'error': "CUDA error: operation failed due to a previous error during capture\nSearch for `cudaErrorStreamCaptureInvalidated' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\n"}
+{'layer': 'unpooler', 'm': 32, 'error': "CUDA error: operation failed due to a previous error during capture\nSearch for `cudaErrorStreamCaptureInvalidated' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\n"}
+{'layer': 'unpooler', 'm': 128, 'error': "CUDA error: operation failed due to a previous error during capture\nSearch for `cudaErrorStreamCaptureInvalidated' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\n"}
+{'layer': 'unpooler', 'm': 256, 'error': "CUDA error: operation failed due to a previous error during capture\nSearch for `cudaErrorStreamCaptureInvalidated' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\n"}
+
+STDERR
+2026-10-29 14:40:18,876 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START backend_lt bench
+END backend_lt bench 0 "original", "heuristic": 3, "correct": true, "candidate_us": 36.959998309612274, "control_us": 34.52799841761589, "algorithm_bytes": "42000000ca0100002300000001000000000000000000000001000000000003000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "unpooler", "m": 256, "layout": "original", "heuristic": 4, "correct": true, "candidate_us": 38.40000182390213, "control_us": 34.352000802755356, "algorithm_bytes": "42000000c50000002300000001000000000000000000000002000000000007000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "unpooler", "m": 256, "layout": "original", "heuristic": 5, "correct": true, "candidate_us": 38.72000053524971, "control_us": 34.44800153374672, "algorithm_bytes": "42000000120000002300000001000000000000000000000003000000000005000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "unpooler", "m": 256, "layout": "original", "heuristic": 6, "correct": true, "candidate_us": 38.32000121474266, "control_us": 34.55999866127968, "algorithm_bytes": "42000000110000002300000001000000000000000000000000000000000003000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+{"layer": "unpooler", "m": 256, "layout": "original", "heuristic": 7, "correct": true, "candidate_us": 38.256000727415085, "control_us": 34.432001411914825, "algorithm_bytes": "42000000c90000002300000001000000000000000000000002000000000007000100000035fc01000e0000000e0000000e000e00440000000000000000000000"}
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "backend_cudnn",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/backend_cudnn.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "backend_lt",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/backend_lt.py"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 14:39:59 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:72:00.0 Off |                    0 |\n| N/A   36C    P0             77W /  700W |     118MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 55.37425136566162
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-5p90OEU3epDhI92sl6pKw0

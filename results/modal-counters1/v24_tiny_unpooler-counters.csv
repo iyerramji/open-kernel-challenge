@@ -1,0 +1,36 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 126 (/usr/bin/python3.12)
+==PROF== Disconnected from process 126
+==PROF== Connected to process 208 (/usr/bin/python3.12)
+==PROF== Disconnected from process 208
+==PROF== Connected to process 237 (/usr/bin/python3.12)
+==PROF== Disconnected from process 237
+==PROF== Connected to process 266 (/usr/bin/python3.12)
+==PROF== Disconnected from process 266
+==PROF== Connected to process 295 (/usr/bin/python3.12)
+==PROF== Disconnected from process 295
+==PROF== Connected to process 324 (/usr/bin/python3.12)
+==PROF== Disconnected from process 324
+==PROF== Connected to process 353 (/usr/bin/python3.12)
+==PROF== Disconnected from process 353
+==PROF== Connected to process 382 (/usr/bin/python3.12)
+==PROF== Disconnected from process 382
+==PROF== Connected to process 411 (/usr/bin/python3.12)
+==PROF== Disconnected from process 411
+==PROF== Connected to process 440 (/usr/bin/python3.12)
+==PROF== Disconnected from process 440
+==PROF== Creating report from application replay data: 0%............100%
+"ID","Process ID","Process Name","Host Name","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","dram__bytes_read.sum","byte","67,134,464"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","dram__bytes_write.sum","byte","2,917,376"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","dram__throughput.avg.pct_of_peak_sustained_elapsed","%","66.30"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","launch__registers_per_thread","register/thread","29"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","launch__waves_per_multiprocessor","","0.48"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","sm__throughput.avg.pct_of_peak_sustained_elapsed","%","23.94"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","sm__warps_active.avg.pct_of_peak_sustained_active","%","45.29"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","smsp__issue_active.avg.pct_of_peak_sustained_active","%","26.75"
+"0","126","python3.12","127.0.0.1","void hopper_bf16_gemv_kernel<4096, 8192, 1, 2, 8>(__nv_bfloat16 *, const __nv_bfloat16 *, const __nv_bfloat16 *)","1","7","(256, 1, 1)","(512, 1, 1)","0","9.0","Command line profiler metrics","smsp__warps_eligible.avg.per_cycle_active","warp","0.38"
+
+STDERR
+2026-10-29 13:54:08,844 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.

@@ -1,0 +1,84 @@
+v28_native_raw 1 qkv_gate PASS
+v28_native_raw 7 pooler PASS
+v28_native_raw 33 o PASS
+v28_native_raw 130 unpooler PASS
+v28_native_raw 5 unpooler PASS
+v28_native_raw 8 router PASS
+v28_native_raw 9 router PASS
+v28_native_raw 512 qkv_gate PASS
+v28_native_raw 1000 unpooler PASS
+v28_native_raw 1 qkv_gate PASS
+v28_native_raw 1 o PASS
+v28_native_raw 1 pooler PASS
+v28_native_raw 1 unpooler PASS
+v28_native_raw 1 router PASS
+v28_native_raw 16 qkv_gate PASS
+v28_native_raw 16 o PASS
+v28_native_raw 16 pooler PASS
+v28_native_raw 16 unpooler PASS
+v28_native_raw 16 router PASS
+v28_native_raw 32 qkv_gate PASS
+v28_native_raw 32 o PASS
+v28_native_raw 32 pooler PASS
+v28_native_raw 32 unpooler PASS
+v28_native_raw 32 router PASS
+v28_native_raw 8 qkv_gate PASS
+v28_native_raw 8 o PASS
+v28_native_raw 8 pooler PASS
+v28_native_raw 8 unpooler PASS
+v28_native_raw 8 router PASS
+v28_native_raw 128 qkv_gate PASS
+v28_native_raw 128 o PASS
+v28_native_raw 128 pooler PASS
+v28_native_raw 128 unpooler PASS
+v28_native_raw 128 router PASS
+v28_native_raw 256 qkv_gate PASS
+v28_native_raw 256 o PASS
+v28_native_raw 256 pooler PASS
+v28_native_raw 256 unpooler PASS
+v28_native_raw 256 router PASS
+v28_native_raw 2 qkv_gate PASS
+v28_native_raw 2 o PASS
+v28_native_raw 2 pooler PASS
+v28_native_raw 2 unpooler PASS
+v28_native_raw 2 router PASS
+v28_native_raw 6 qkv_gate PASS
+v28_native_raw 6 o PASS
+v28_native_raw 6 pooler PASS
+v28_native_raw 6 unpooler PASS
+v28_native_raw 6 router PASS
+v28_native_raw 10 qkv_gate PASS
+v28_native_raw 10 o PASS
+v28_native_raw 10 pooler PASS
+v28_native_raw 10 unpooler PASS
+v28_native_raw 10 router PASS
+v28_native_raw 17 qkv_gate PASS
+v28_native_raw 17 o PASS
+v28_native_raw 17 pooler PASS
+v28_native_raw 17 unpooler PASS
+v28_native_raw 17 router PASS
+v28_native_raw 31 qkv_gate PASS
+v28_native_raw 31 o PASS
+v28_native_raw 31 pooler PASS
+v28_native_raw 31 unpooler PASS
+v28_native_raw 31 router PASS
+v28_native_raw 129 qkv_gate PASS
+v28_native_raw 129 o PASS
+v28_native_raw 129 pooler PASS
+v28_native_raw 129 unpooler PASS
+v28_native_raw 129 router PASS
+v28_native_raw 257 qkv_gate PASS
+v28_native_raw 257 o PASS
+v28_native_raw 257 pooler PASS
+v28_native_raw 257 unpooler PASS
+v28_native_raw 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 14:19:56,440 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.

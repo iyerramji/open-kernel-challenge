@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+repos/
+tools/
+profiles/
+problems/muse_bf16_proj/
+.env
+.env.*

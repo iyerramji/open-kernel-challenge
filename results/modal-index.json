@@ -1,0 +1,22 @@
+{
+  "evidence_type": "Modal diagnostic only; never official challenge score",
+  "archives": [
+    "results/modal-backends1",
+    "results/modal-backends2",
+    "results/modal-backends3",
+    "results/modal-backends4",
+    "results/modal-codec1",
+    "results/modal-counters1",
+    "results/modal-lt-repeat",
+    "results/modal-lt1",
+    "results/modal-lt2",
+    "results/modal-native1",
+    "results/modal-native2",
+    "results/modal-pass1",
+    "results/modal-probe1",
+    "results/modal-repeat1",
+    "results/modal-resume1",
+    "results/modal-review1",
+    "results/modal-review2"
+  ]
+}

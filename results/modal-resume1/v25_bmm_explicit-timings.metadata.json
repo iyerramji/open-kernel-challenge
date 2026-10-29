@@ -1,0 +1,9 @@
+{
+  "gpu": "NVIDIA H200",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "candidate_sha256": "1491bdd2d7e7ef2080655c5c7cd36caae8e28f41de08fc591b7145ed06d5daf3",
+  "reps": 60,
+  "official_equivalence": false,
+  "note": "No official fixed-cost subtraction, confidence interval or paired two-repetition estimator. Use okc check for score."
+}

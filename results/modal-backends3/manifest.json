@@ -1,0 +1,16 @@
+{
+  "v24_tiny_unpooler-validate.log": "10f0e44703e224879f39956f08a3626dcdc6fd57f19cc1ecf2bf41daf538027a",
+  "v30_qkv_lt.py": "712ea7527dc71824fa9024d8b6f753faacc18f1857c93f7718ed0d6f520d189c",
+  "v30_qkv_lt-validation.json": "6b9a014ff573b17daa827da2feb51f942674f97c4db16ffeaefdc0537e0c1ac8",
+  "modal.log": "a5878a93ce86eff489a102f0ad269356bbc7ab80c9b397c9caf2662611b34479",
+  "v24_tiny_unpooler-validation.json": "e52ce654543cd8c09b77e68f108ce1842d52c5938c19c49630084b7e18fd541a",
+  "v24_tiny_unpooler-timings.metadata.json": "d236eb384afca3c20e4f9fda78836fdbd642b33746d4e7795ad12185e9204a8f",
+  "modal_backends3.py": "8bfd225ac28635c8a49e9c6d2dd2eeeb62ede4fc164dec3cc7b2ed840c8a6cec",
+  "v24_tiny_unpooler-timings.csv": "a6e2eeef824ffd901a2afab9ac32376d5bb17590d41e4a88e3a26da26be94ed6",
+  "v24_tiny_unpooler-bench.log": "6838aaf5890c173b40f33b9d97bf90417b369ffd965b949b6ee4486dc21e1b31",
+  "v30_qkv_lt-bench.log": "f81ce007f0fb77840c140e3286df919e17169b2bb6b2f72d0bd8b0ecdd27f66b",
+  "v30_qkv_lt-validate.log": "f92b6c262c328ae13bea779f0aa594fdc66e6ee3a1e5708360306c2e0c630da8",
+  "returned.json": "bec8634494d74372becad834f12c355a6b4b1a1d32e8972f94e6db0198a4e6da",
+  "v30_qkv_lt-timings.metadata.json": "f9297db2ab69e7088b073256b69908a942878e4b2d3a5c8eda57c99341104978",
+  "v30_qkv_lt-timings.csv": "88d70bbf773740a61458d7e2b804574713f5463bd6d6fbf983b92f72b31c23e7"
+}

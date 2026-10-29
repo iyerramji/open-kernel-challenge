@@ -1,0 +1,328 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-zpOEc8tN3rp9bzmBWiEh6h
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_resume1.py
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START v12_wide_native validate
+END v12_wide_native validate 0  qkv_gate PASS
+v12_wide_native 128 o PASS
+v12_wide_native 128 pooler PASS
+v12_wide_native 128 unpooler PASS
+v12_wide_native 128 router PASS
+v12_wide_native 256 qkv_gate PASS
+v12_wide_native 256 o PASS
+v12_wide_native 256 pooler PASS
+v12_wide_native 256 unpooler PASS
+v12_wide_native 256 router PASS
+v12_wide_native 2 qkv_gate PASS
+v12_wide_native 2 o PASS
+v12_wide_native 2 pooler PASS
+v12_wide_native 2 unpooler PASS
+v12_wide_native 2 router PASS
+v12_wide_native 6 qkv_gate PASS
+v12_wide_native 6 o PASS
+v12_wide_native 6 pooler PASS
+v12_wide_native 6 unpooler PASS
+v12_wide_native 6 router PASS
+v12_wide_native 10 qkv_gate PASS
+v12_wide_native 10 o PASS
+v12_wide_native 10 pooler PASS
+v12_wide_native 10 unpooler PASS
+v12_wide_native 10 router PASS
+v12_wide_native 17 qkv_gate PASS
+v12_wide_native 17 o PASS
+v12_wide_native 17 pooler PASS
+v12_wide_native 17 unpooler PASS
+v12_wide_native 17 router PASS
+v12_wide_native 31 qkv_gate PASS
+v12_wide_native 31 o PASS
+v12_wide_native 31 pooler PASS
+v12_wide_native 31 unpooler PASS
+v12_wide_native 31 router PASS
+v12_wide_native 129 qkv_gate PASS
+v12_wide_native 129 o PASS
+v12_wide_native 129 pooler PASS
+v12_wide_native 129 unpooler PASS
+v12_wide_native 129 router PASS
+v12_wide_native 257 qkv_gate PASS
+v12_wide_native 257 o PASS
+v12_wide_native 257 pooler PASS
+v12_wide_native 257 unpooler PASS
+v12_wide_native 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+
+START v12_wide_native bench
+END v12_wide_native bench 0 baseline_us': 29.7279991209507, 'paired_speedup': 1.0299667429432249, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.424000099301338, 'baseline_us': 21.12000063061714, 'paired_speedup': 1.3711039088901718, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.416000962257385, 'baseline_us': 29.743999242782593, 'paired_speedup': 0.9184861004437284, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 15.168000012636185, 'baseline_us': 14.25600005313754, 'paired_speedup': 0.9366419656328625, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 37.98399865627289, 'baseline_us': 38.864001631736755, 'paired_speedup': 1.0202195137451302, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 34.88000109791756, 'baseline_us': 33.63199904561043, 'paired_speedup': 0.9652792685485452, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.51199907064438, 'baseline_us': 22.288000211119652, 'paired_speedup': 1.3564506822464837, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+START v24_tiny_unpooler validate
+END v24_tiny_unpooler validate 0 oler 256 pooler PASS
+v24_tiny_unpooler 256 unpooler PASS
+v24_tiny_unpooler 256 router PASS
+v24_tiny_unpooler 2 qkv_gate PASS
+v24_tiny_unpooler 2 o PASS
+v24_tiny_unpooler 2 pooler PASS
+v24_tiny_unpooler 2 unpooler PASS
+v24_tiny_unpooler 2 router PASS
+v24_tiny_unpooler 6 qkv_gate PASS
+v24_tiny_unpooler 6 o PASS
+v24_tiny_unpooler 6 pooler PASS
+v24_tiny_unpooler 6 unpooler PASS
+v24_tiny_unpooler 6 router PASS
+v24_tiny_unpooler 10 qkv_gate PASS
+v24_tiny_unpooler 10 o PASS
+v24_tiny_unpooler 10 pooler PASS
+v24_tiny_unpooler 10 unpooler PASS
+v24_tiny_unpooler 10 router PASS
+v24_tiny_unpooler 17 qkv_gate PASS
+v24_tiny_unpooler 17 o PASS
+v24_tiny_unpooler 17 pooler PASS
+v24_tiny_unpooler 17 unpooler PASS
+v24_tiny_unpooler 17 router PASS
+v24_tiny_unpooler 31 qkv_gate PASS
+v24_tiny_unpooler 31 o PASS
+v24_tiny_unpooler 31 pooler PASS
+v24_tiny_unpooler 31 unpooler PASS
+v24_tiny_unpooler 31 router PASS
+v24_tiny_unpooler 129 qkv_gate PASS
+v24_tiny_unpooler 129 o PASS
+v24_tiny_unpooler 129 pooler PASS
+v24_tiny_unpooler 129 unpooler PASS
+v24_tiny_unpooler 129 router PASS
+v24_tiny_unpooler 257 qkv_gate PASS
+v24_tiny_unpooler 257 o PASS
+v24_tiny_unpooler 257 pooler PASS
+v24_tiny_unpooler 257 unpooler PASS
+v24_tiny_unpooler 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 13:03:20,101 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START v24_tiny_unpooler bench
+END v24_tiny_unpooler bench 0 496, 'baseline_us': 29.680000618100166, 'paired_speedup': 1.0270995533615377, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.424000099301338, 'baseline_us': 21.15200087428093, 'paired_speedup': 1.374356201562943, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.15999901294708, 'baseline_us': 29.392000287771225, 'paired_speedup': 0.9142568738087296, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 14.527999795973301, 'baseline_us': 14.84800036996603, 'paired_speedup': 1.020896670236462, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 36.94400005042553, 'baseline_us': 38.28800097107887, 'paired_speedup': 1.030264389355425, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 34.47999991476536, 'baseline_us': 33.7119996547699, 'paired_speedup': 0.982970652435729, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.35199971497059, 'baseline_us': 22.23999984562397, 'paired_speedup': 1.3547766691709695, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+START v25_bmm_explicit validate
+END v25_bmm_explicit validate 0 25_bmm_explicit 128 pooler PASS
+v25_bmm_explicit 128 unpooler PASS
+v25_bmm_explicit 128 router PASS
+v25_bmm_explicit 256 qkv_gate PASS
+v25_bmm_explicit 256 o PASS
+v25_bmm_explicit 256 pooler PASS
+v25_bmm_explicit 256 unpooler PASS
+v25_bmm_explicit 256 router PASS
+v25_bmm_explicit 2 qkv_gate PASS
+v25_bmm_explicit 2 o PASS
+v25_bmm_explicit 2 pooler PASS
+v25_bmm_explicit 2 unpooler PASS
+v25_bmm_explicit 2 router PASS
+v25_bmm_explicit 6 qkv_gate PASS
+v25_bmm_explicit 6 o PASS
+v25_bmm_explicit 6 pooler PASS
+v25_bmm_explicit 6 unpooler PASS
+v25_bmm_explicit 6 router PASS
+v25_bmm_explicit 10 qkv_gate PASS
+v25_bmm_explicit 10 o PASS
+v25_bmm_explicit 10 pooler PASS
+v25_bmm_explicit 10 unpooler PASS
+v25_bmm_explicit 10 router PASS
+v25_bmm_explicit 17 qkv_gate PASS
+v25_bmm_explicit 17 o PASS
+v25_bmm_explicit 17 pooler PASS
+v25_bmm_explicit 17 unpooler PASS
+v25_bmm_explicit 17 router PASS
+v25_bmm_explicit 31 qkv_gate PASS
+v25_bmm_explicit 31 o PASS
+v25_bmm_explicit 31 pooler PASS
+v25_bmm_explicit 31 unpooler PASS
+v25_bmm_explicit 31 router PASS
+v25_bmm_explicit 129 qkv_gate PASS
+v25_bmm_explicit 129 o PASS
+v25_bmm_explicit 129 pooler PASS
+v25_bmm_explicit 129 unpooler PASS
+v25_bmm_explicit 129 router PASS
+v25_bmm_explicit 257 qkv_gate PASS
+v25_bmm_explicit 257 o PASS
+v25_bmm_explicit 257 pooler PASS
+v25_bmm_explicit 257 unpooler PASS
+v25_bmm_explicit 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+
+START v25_bmm_explicit bench
+END v25_bmm_explicit bench 0 aseline_us': 29.839999973773956, 'paired_speedup': 0.9034411651266119, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.343999955803156, 'baseline_us': 21.104000508785248, 'paired_speedup': 1.3647709364242213, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 29.29599955677986, 'baseline_us': 29.392000287771225, 'paired_speedup': 1.001631006915796, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 14.879999682307243, 'baseline_us': 14.543999917805195, 'paired_speedup': 0.976842009784346, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 37.71200031042099, 'baseline_us': 38.68800029158592, 'paired_speedup': 1.0279644318049583, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 34.41600129008293, 'baseline_us': 33.59999880194664, 'paired_speedup': 0.9765323799500742, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.287999227643013, 'baseline_us': 22.143999114632607, 'paired_speedup': 1.3576456588560868, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "v12_wide_native",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v12_wide_native",
+        "--output",
+        "/tmp/results/v12_wide_native-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v12_wide_native",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v12_wide_native.py",
+        "--reps",
+        "60",
+        "--output",
+        "/tmp/results/v12_wide_native-timings.csv"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v24_tiny_unpooler",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v24_tiny_unpooler",
+        "--output",
+        "/tmp/results/v24_tiny_unpooler-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v24_tiny_unpooler",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v24_tiny_unpooler.py",
+        "--reps",
+        "60",
+        "--output",
+        "/tmp/results/v24_tiny_unpooler-timings.csv"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v25_bmm_explicit",
+        "--output",
+        "/tmp/results/v25_bmm_explicit-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v25_bmm_explicit.py",
+        "--reps",
+        "60",
+        "--output",
+        "/tmp/results/v25_bmm_explicit-timings.csv"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 13:01:31 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:97:00.0 Off |                    0 |\n| N/A   33C    P0             77W /  700W |      68MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 193.87251567840576
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-zpOEc8tN3rp9bzmBWiEh6h

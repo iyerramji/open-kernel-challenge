@@ -1,0 +1,219 @@
+[
+  {
+    "priority": 1,
+    "name": "sglang",
+    "url": "https://github.com/sgl-project/sglang.git",
+    "commit": "a55ab7d5ae1bba59ac351e55026fe7f7644ecc5f",
+    "shallow": true,
+    "clean": true,
+    "license": "Apache-2.0",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Official baseline and integration; unquant.py and muse_spark.py; Hopper GEMV and router kernels inspected.",
+    "upstream_claim": "Official API aggregate 4830.8 us; upstream Hopper GEMV comments claim bandwidth. Neither reproduced here.",
+    "verified_h200_benchmark": false,
+    "caveats": "Official pin; optional backends differ from default.",
+    "evidence_path": "python/sglang/srt/layers/quantization/unquant.py",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 2,
+    "name": "triton",
+    "url": "https://github.com/triton-lang/triton.git",
+    "commit": "cd2e01c6686d6503802e6cdfac56d5a5dfdb27a1",
+    "shallow": true,
+    "clean": true,
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Direct implementation API; tiled dot, masks, persistent scheduling.",
+    "upstream_claim": "Tutorials 03-matrix-multiplication.py and 09-persistent-matmul.py include benchmark methods; no transferred speed claim.",
+    "verified_h200_benchmark": false,
+    "caveats": "Hopper compatible generally; newest checkout differs from image compiler.",
+    "evidence_path": "python/tutorials/03-matrix-multiplication.py",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 3,
+    "name": "cutlass",
+    "url": "https://github.com/NVIDIA/cutlass.git",
+    "commit": "e13f5cd4142c43efc37c2f6339923eb4a57afb99",
+    "shallow": true,
+    "clean": true,
+    "license": "BSD-3-Clause",
+    "license_files": [
+      "LICENSE.txt"
+    ],
+    "relevance": "Hopper GEMM/TMA/WGMMA and CuTe reference.",
+    "upstream_claim": "README Performance charts compare selected GEMMs to peaks; not skinny challenge measurements.",
+    "verified_h200_benchmark": false,
+    "caveats": "Do not use Blackwell/Rubin-only kernels on H200.",
+    "evidence_path": "examples/49_hopper_gemm_with_collective_builder/49_collective_builder.cu",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 4,
+    "name": "ThunderKittens",
+    "url": "https://github.com/HazyResearch/ThunderKittens.git",
+    "commit": "67845f5fa48d05343dbbc1ba1403f11061f08d2d",
+    "shallow": true,
+    "clean": true,
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Educational Hopper BF16 GEMM and warpgroup scheduling.",
+    "upstream_claim": "README claims ~855 TFLOP/s H100 (86% theoretical) for its example; not verified here.",
+    "verified_h200_benchmark": false,
+    "caveats": "Large throughput GEMMs do not predict cold-weight M=1 performance.",
+    "evidence_path": "kernels/gemm/educational_h100",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 5,
+    "name": "quack",
+    "url": "https://github.com/Dao-AILab/quack.git",
+    "commit": "77a750c0d9548d4a6e23c0f64062d61b3ea420ff",
+    "shallow": true,
+    "clean": true,
+    "license": "Apache-2.0",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Hopper GEMM+epilogue and memory-bound kernel design.",
+    "upstream_claim": "README links single-row BF16 chart and media/2025-07-10-membound-sol.md; no numeric claim transferred.",
+    "verified_h200_benchmark": false,
+    "caveats": "Requires new CUDA/CuTe versions; image pins quack 0.6.5, checkout differs.",
+    "evidence_path": "quack",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 6,
+    "name": "DeepGEMM",
+    "url": "https://github.com/deepseek-ai/DeepGEMM.git",
+    "commit": "5081f8513af57e61696de4f4f04b0e707ffb503e",
+    "shallow": true,
+    "clean": true,
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "SM90 tensor-core/GEMM design; future grouped-MoE study.",
+    "upstream_claim": "README reports up to 1550 TFLOP/s H800 for historical FP8 work; not BF16 H200 evidence.",
+    "verified_h200_benchmark": false,
+    "caveats": "FP8 conversion is prohibited for this BF16 projection problem.",
+    "evidence_path": "README.md",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 7,
+    "name": "sglang-DeepGEMM",
+    "url": "https://github.com/sgl-project/DeepGEMM.git",
+    "commit": "cbe1727eacd9ad704795584ce1421dd1f5a8d67e",
+    "shallow": true,
+    "clean": true,
+    "license": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Exact custom dependency source named by pinned Muse Dockerfile.",
+    "upstream_claim": "No applicable H200 challenge benchmark reproduced.",
+    "verified_h200_benchmark": false,
+    "caveats": "Source clone only; SGLang patch helper not applied/build not run; MoE not this projection.",
+    "evidence_path": "README.md",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 8,
+    "name": "tilelang",
+    "url": "https://github.com/tile-ai/tilelang.git",
+    "commit": "d1b17c052578fe2cb1eddf90768e7dbdc6f8c163",
+    "shallow": true,
+    "clean": true,
+    "license": "MIT with historical collaboration note",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Alternative GEMM DSL, scheduling/autotuning and H100 examples.",
+    "upstream_claim": "README benchmark summary includes H100 matmul/attention plots; workload-specific upstream claims.",
+    "verified_h200_benchmark": false,
+    "caveats": "Newest API may not match installed image; BF16 path only for chosen task.",
+    "evidence_path": "examples",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 9,
+    "name": "flashinfer",
+    "url": "https://github.com/flashinfer-ai/flashinfer.git",
+    "commit": "b7a8b5d2bbea279d09112392f67d9f1359a48b2d",
+    "shallow": true,
+    "clean": true,
+    "license": "Apache-2.0",
+    "license_files": [
+      "LICENSE.kda-for-kda.txt",
+      "LICENSE"
+    ],
+    "relevance": "Inference GEMM/MoE/attention backends and serving integration.",
+    "upstream_claim": "README explicitly supports H100/H200 SM90; performance descriptions/benchmarks are upstream, not local results.",
+    "verified_h200_benchmark": false,
+    "caveats": "Attention kernels are more relevant to separate muse_attention_decode task.",
+    "evidence_path": "README.md",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 10,
+    "name": "flash-attention",
+    "url": "https://github.com/Dao-AILab/flash-attention.git",
+    "commit": "98c1cee0ed59307833841cdbf567fe336ceec13a",
+    "shallow": true,
+    "clean": true,
+    "license": "BSD-3-Clause; cute subtree has separate LICENSE",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Hopper FA3 and future attention task.",
+    "upstream_claim": "README includes FA3 H100 80GB SXM5 FP16 forward speedup chart; not this GEMM workload.",
+    "verified_h200_benchmark": false,
+    "caveats": "Attention benchmarks and Blackwell paths are not dense-projection H200 evidence.",
+    "evidence_path": "hopper",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 11,
+    "name": "reference-kernels",
+    "url": "https://github.com/gpu-mode/reference-kernels.git",
+    "commit": "f3295bb6bd559bae4659d2d8fc45edb1394251b1",
+    "shallow": true,
+    "clean": true,
+    "license": "June 9 Researcher Reciprocity License v1.0",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Official credit identifies judge-format ancestry; license identified only, no candidate reuse.",
+    "upstream_claim": "Not an optimized-winner leaderboard or evidence of H200 speed.",
+    "verified_h200_benchmark": false,
+    "caveats": "Restricted license; no implementation reuse. Mixed architectures/tasks.",
+    "evidence_path": "LICENSE",
+    "submodules_initialized": false
+  },
+  {
+    "priority": 12,
+    "name": "kernelbot",
+    "url": "https://github.com/gpu-mode/kernelbot.git",
+    "commit": "ec4669669d368c395675565831f98b509db2b0b3",
+    "shallow": true,
+    "clean": true,
+    "license": "June 9 Researcher Reciprocity License v1.0",
+    "license_files": [
+      "LICENSE"
+    ],
+    "relevance": "Official credit identifies harness ancestry; license identified only, no candidate reuse.",
+    "upstream_claim": "Infrastructure, not a fastest-kernel codebase.",
+    "verified_h200_benchmark": false,
+    "caveats": "Restricted license; no implementation reuse. Not a kernel competitor ranking.",
+    "evidence_path": "LICENSE",
+    "submodules_initialized": false
+  }
+]

@@ -1,0 +1,83 @@
+v32_router_fma 1 qkv_gate PASS
+v32_router_fma 7 pooler PASS
+v32_router_fma 33 o PASS
+v32_router_fma 130 unpooler PASS
+v32_router_fma 5 unpooler PASS
+v32_router_fma 8 router PASS
+v32_router_fma 9 router PASS
+v32_router_fma 512 qkv_gate PASS
+v32_router_fma 1000 unpooler PASS
+v32_router_fma 1 qkv_gate PASS
+v32_router_fma 1 o PASS
+v32_router_fma 1 pooler PASS
+v32_router_fma 1 unpooler PASS
+v32_router_fma 1 router PASS
+v32_router_fma 16 qkv_gate PASS
+v32_router_fma 16 o PASS
+v32_router_fma 16 pooler PASS
+v32_router_fma 16 unpooler PASS
+v32_router_fma 16 router PASS
+v32_router_fma 32 qkv_gate PASS
+v32_router_fma 32 o PASS
+v32_router_fma 32 pooler PASS
+v32_router_fma 32 unpooler PASS
+v32_router_fma 32 router PASS
+v32_router_fma 8 qkv_gate PASS
+v32_router_fma 8 o PASS
+v32_router_fma 8 pooler PASS
+v32_router_fma 8 unpooler PASS
+v32_router_fma 8 router PASS
+v32_router_fma 128 qkv_gate PASS
+v32_router_fma 128 o PASS
+v32_router_fma 128 pooler PASS
+v32_router_fma 128 unpooler PASS
+v32_router_fma 128 router PASS
+v32_router_fma 256 qkv_gate PASS
+v32_router_fma 256 o PASS
+v32_router_fma 256 pooler PASS
+v32_router_fma 256 unpooler PASS
+v32_router_fma 256 router PASS
+v32_router_fma 2 qkv_gate PASS
+v32_router_fma 2 o PASS
+v32_router_fma 2 pooler PASS
+v32_router_fma 2 unpooler PASS
+v32_router_fma 2 router PASS
+v32_router_fma 6 qkv_gate PASS
+v32_router_fma 6 o PASS
+v32_router_fma 6 pooler PASS
+v32_router_fma 6 unpooler PASS
+v32_router_fma 6 router PASS
+v32_router_fma 10 qkv_gate PASS
+v32_router_fma 10 o PASS
+v32_router_fma 10 pooler PASS
+v32_router_fma 10 unpooler PASS
+v32_router_fma 10 router PASS
+v32_router_fma 17 qkv_gate PASS
+v32_router_fma 17 o PASS
+v32_router_fma 17 pooler PASS
+v32_router_fma 17 unpooler PASS
+v32_router_fma 17 router PASS
+v32_router_fma 31 qkv_gate PASS
+v32_router_fma 31 o PASS
+v32_router_fma 31 pooler PASS
+v32_router_fma 31 unpooler PASS
+v32_router_fma 31 router PASS
+v32_router_fma 129 qkv_gate PASS
+v32_router_fma 129 o PASS
+v32_router_fma 129 pooler PASS
+v32_router_fma 129 unpooler PASS
+v32_router_fma 129 router PASS
+v32_router_fma 257 qkv_gate PASS
+v32_router_fma 257 o PASS
+v32_router_fma 257 pooler PASS
+v32_router_fma 257 unpooler PASS
+v32_router_fma 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR

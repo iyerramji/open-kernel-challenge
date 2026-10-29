@@ -1,0 +1,84 @@
+v33_qkv_lt_checked 1 qkv_gate PASS
+v33_qkv_lt_checked 7 pooler PASS
+v33_qkv_lt_checked 33 o PASS
+v33_qkv_lt_checked 130 unpooler PASS
+v33_qkv_lt_checked 5 unpooler PASS
+v33_qkv_lt_checked 8 router PASS
+v33_qkv_lt_checked 9 router PASS
+v33_qkv_lt_checked 512 qkv_gate PASS
+v33_qkv_lt_checked 1000 unpooler PASS
+v33_qkv_lt_checked 1 qkv_gate PASS
+v33_qkv_lt_checked 1 o PASS
+v33_qkv_lt_checked 1 pooler PASS
+v33_qkv_lt_checked 1 unpooler PASS
+v33_qkv_lt_checked 1 router PASS
+v33_qkv_lt_checked 16 qkv_gate PASS
+v33_qkv_lt_checked 16 o PASS
+v33_qkv_lt_checked 16 pooler PASS
+v33_qkv_lt_checked 16 unpooler PASS
+v33_qkv_lt_checked 16 router PASS
+v33_qkv_lt_checked 32 qkv_gate PASS
+v33_qkv_lt_checked 32 o PASS
+v33_qkv_lt_checked 32 pooler PASS
+v33_qkv_lt_checked 32 unpooler PASS
+v33_qkv_lt_checked 32 router PASS
+v33_qkv_lt_checked 8 qkv_gate PASS
+v33_qkv_lt_checked 8 o PASS
+v33_qkv_lt_checked 8 pooler PASS
+v33_qkv_lt_checked 8 unpooler PASS
+v33_qkv_lt_checked 8 router PASS
+v33_qkv_lt_checked 128 qkv_gate PASS
+v33_qkv_lt_checked 128 o PASS
+v33_qkv_lt_checked 128 pooler PASS
+v33_qkv_lt_checked 128 unpooler PASS
+v33_qkv_lt_checked 128 router PASS
+v33_qkv_lt_checked 256 qkv_gate PASS
+v33_qkv_lt_checked 256 o PASS
+v33_qkv_lt_checked 256 pooler PASS
+v33_qkv_lt_checked 256 unpooler PASS
+v33_qkv_lt_checked 256 router PASS
+v33_qkv_lt_checked 2 qkv_gate PASS
+v33_qkv_lt_checked 2 o PASS
+v33_qkv_lt_checked 2 pooler PASS
+v33_qkv_lt_checked 2 unpooler PASS
+v33_qkv_lt_checked 2 router PASS
+v33_qkv_lt_checked 6 qkv_gate PASS
+v33_qkv_lt_checked 6 o PASS
+v33_qkv_lt_checked 6 pooler PASS
+v33_qkv_lt_checked 6 unpooler PASS
+v33_qkv_lt_checked 6 router PASS
+v33_qkv_lt_checked 10 qkv_gate PASS
+v33_qkv_lt_checked 10 o PASS
+v33_qkv_lt_checked 10 pooler PASS
+v33_qkv_lt_checked 10 unpooler PASS
+v33_qkv_lt_checked 10 router PASS
+v33_qkv_lt_checked 17 qkv_gate PASS
+v33_qkv_lt_checked 17 o PASS
+v33_qkv_lt_checked 17 pooler PASS
+v33_qkv_lt_checked 17 unpooler PASS
+v33_qkv_lt_checked 17 router PASS
+v33_qkv_lt_checked 31 qkv_gate PASS
+v33_qkv_lt_checked 31 o PASS
+v33_qkv_lt_checked 31 pooler PASS
+v33_qkv_lt_checked 31 unpooler PASS
+v33_qkv_lt_checked 31 router PASS
+v33_qkv_lt_checked 129 qkv_gate PASS
+v33_qkv_lt_checked 129 o PASS
+v33_qkv_lt_checked 129 pooler PASS
+v33_qkv_lt_checked 129 unpooler PASS
+v33_qkv_lt_checked 129 router PASS
+v33_qkv_lt_checked 257 qkv_gate PASS
+v33_qkv_lt_checked 257 o PASS
+v33_qkv_lt_checked 257 pooler PASS
+v33_qkv_lt_checked 257 unpooler PASS
+v33_qkv_lt_checked 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 14:57:09,210 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.

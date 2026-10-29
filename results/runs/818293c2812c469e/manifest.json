@@ -1,0 +1,32 @@
+{
+  "job": "818293c2812c469e",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v20_router_group4.py",
+  "sha256": "3fbdf8ec93a664f853ab04f3d84b1b670de9a5b22b0d3ee693596f80befc9e29",
+  "server_content_hash": "6f4098391a3a9fc26b32b5a2d44d822d9595682eb4da18958f9d810fd2bd1e0a",
+  "passed": true,
+  "speedup": 1.146420381296951,
+  "speedup_ci": [
+    1.1292240755774967,
+    1.163616687016405
+  ],
+  "error": null,
+  "created_at": 1793256197.1018505,
+  "finished_at": 1793256278.8022764,
+  "gpu": "H200",
+  "files": {
+    "result.json": "389119a6ecfe07c2f4f3030965be64f7fb385e0b3df479c5d576e90a98844de3",
+    "submission.py": "3fbdf8ec93a664f853ab04f3d84b1b670de9a5b22b0d3ee693596f80befc9e29",
+    "v20_router_group4.818293c2812c469e.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "returned-log-tail.txt": "01601b9c5ca078d98949bd7d6541cb46b86540b70094abe004e982f0488cb810",
+    "shapes.csv": "d9a860074a3f70f34cb716672f7883ce4a06dd807fef28969ec88baed1722ce4",
+    "v20_router_group4.818293c2812c469e.json": "cbc2882cf0e55925f2fe316a142d87130f64d6cd84245420affbfff57f069f8f",
+    "v20_router_group4.818293c2812c469e.txt": "af885bd69b70a7aa5ab8934deb2781db2be806c47f7ae739d4cfc1dcac33bea7",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

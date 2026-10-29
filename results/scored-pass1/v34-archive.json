@@ -1,0 +1,32 @@
+{
+  "job": "764ac132f5224473",
+  "mode": "run",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v34_official_bundle.py",
+  "sha256": "16062dfacb087e6e7931809ee08e7fd49c76b0d00412f998a2fb6605b71b729c",
+  "server_content_hash": "6d5499fc5753f90bd740d2a7662d642b17f9e5339d0b7ce52df820a9aa1a490e",
+  "passed": true,
+  "speedup": 1.1560213464763613,
+  "speedup_ci": [
+    1.138681026279216,
+    1.1733616666735067
+  ],
+  "error": null,
+  "created_at": 1793286850.255459,
+  "finished_at": 1793286935.6447842,
+  "gpu": "H200",
+  "files": {
+    "v34_official_bundle.764ac132f5224473.txt": "1c3d84a53d5efcc93090a185ca861e6c7ffd433dd4f06533fb0e6b641da88edc",
+    "result.json": "93948a0bc7a775b7589595cdaf0f3f96e14f2c5703a76fab8dd79529004fac22",
+    "submission.py": "16062dfacb087e6e7931809ee08e7fd49c76b0d00412f998a2fb6605b71b729c",
+    "v34_official_bundle.764ac132f5224473.json": "351e3e341ae5d699ce4c932f52c108078c87cf40f0ad5ae038122113e4f4e833",
+    "v34_official_bundle.764ac132f5224473.log": "6e4867bd01a24c8b5bbb0758be6d6d226d6d7eacfcf9b0b6d5c42b9a16b56cf8",
+    "returned-log-tail.txt": "d186b30a5e90b21a15ad45b5cd1ca8e2d242eea065b46a4862c2346c7ece6589",
+    "shapes.csv": "eed1814122e5a40791605ed6058472a67cab019913a7a8e88d49e6a4f273c173",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

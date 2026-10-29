@@ -1,0 +1,32 @@
+{
+  "job": "be8e2f9477dd409f",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v19_quack_swap64.py",
+  "sha256": "105b7c29bf5383d5429f0ebf4b6f9dc85b622c7cacc67229707d319350d8660a",
+  "server_content_hash": "3572fc0592cc969a19e5d6d0253df7471b9a2e57c4d434feace9411d9688d84c",
+  "passed": true,
+  "speedup": 1.0742589718178985,
+  "speedup_ci": [
+    1.05814508724063,
+    1.090372856395167
+  ],
+  "error": null,
+  "created_at": 1793256100.583705,
+  "finished_at": 1793256182.0222673,
+  "gpu": "H200",
+  "files": {
+    "v19_quack_swap64.be8e2f9477dd409f.json": "b9b1818f3fcb91b65158beef3eb98e8d7bed2120b6c5ad2b3178b48eda0388df",
+    "v19_quack_swap64.be8e2f9477dd409f.txt": "ca783b10e4ec6952b8c0d0387f7b8f72d766463d80fd7b6442a4eccbc6ea756d",
+    "result.json": "6c6c65ce62c38227d4ff8d2175851b702948055c2ff7ade1c5146af8c096e0cb",
+    "submission.py": "105b7c29bf5383d5429f0ebf4b6f9dc85b622c7cacc67229707d319350d8660a",
+    "v19_quack_swap64.be8e2f9477dd409f.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "returned-log-tail.txt": "10e2e0318c76c861b0b528b323fed4a62391f08c9554c1b136a73c3c5cecbdaa",
+    "shapes.csv": "a1b3e801f62cd1e4e242438730cb795784fdf156aa23566a411ff1e5672b280d",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

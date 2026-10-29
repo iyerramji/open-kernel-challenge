@@ -1,0 +1,32 @@
+{
+  "job": "cdcb86c1ee9b4c0a",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v4_tiled_fused_router.py",
+  "sha256": "a622e3699128da6117bcfccc23d2108e81c5a593018f1ded153d9c743becde33",
+  "server_content_hash": "1370882a3e044001c4a568d65049b1f814bf33db0393530effbba7f3fa97a3dd",
+  "passed": true,
+  "speedup": 0.20280633461707065,
+  "speedup_ci": [
+    0.19976423959781459,
+    0.20584842963632669
+  ],
+  "error": null,
+  "created_at": 1793251726.560485,
+  "finished_at": 1793251781.0907426,
+  "gpu": "H200",
+  "files": {
+    "result.json": "8897292c650818c34f579397003b5df3110b9aba613063ad09221582337cc3ed",
+    "v4_tiled_fused_router.cdcb86c1ee9b4c0a.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "submission.py": "a622e3699128da6117bcfccc23d2108e81c5a593018f1ded153d9c743becde33",
+    "returned-log-tail.txt": "6aba556635969b76c151f2031728d82ca2493e24f6d34a91e2ed136fca6b504d",
+    "v4_tiled_fused_router.cdcb86c1ee9b4c0a.json": "0088e2666a46537c5c54c77574e19ca26b795046da1aab85fa78c0514282ad19",
+    "shapes.csv": "924a06537a87897a05797fd4fba671ff7ac718bae35566dfba1afa35c4e03a86",
+    "v4_tiled_fused_router.cdcb86c1ee9b4c0a.txt": "625bf2c8e52fa0c94a5b477b124efd4d9cf3f87f988bb00aa0a89f74e5e43d46",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

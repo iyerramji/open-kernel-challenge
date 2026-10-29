@@ -1,0 +1,6 @@
+cudnn_handle created for device_id = 0
+
+{'layer': 'pooler', 'm': 128, 'correct': True, 'ratio': 0.9805771992776957, 'candidate_us': 31.82400017976761, 'control_us': 32.48000144958496}
+
+STDERR
+2026-10-29 14:58:21,924 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.

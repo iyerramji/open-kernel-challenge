@@ -1,0 +1,78 @@
+Traceback (most recent call last):
+  File "/tmp/muse_bf16_proj-hjm795eo/run/worker.py", line 484, in child_main
+    out = kernel()(state.get("data"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/worker.py", line 415, in <lambda>
+    return functools.partial(lambda k, p, d: k(d, p), fn, state["prep"])
+                                             ^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/submission.py", line 87, in kernel_fn
+    return _torch(data, state)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/submission.py", line 37, in _torch
+    state["quack_fixed"](x, w.T, out, config=state["quack_config"], split_k=4, split_k_mode=2)
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 445, in __call__
+    self.check_disk_cache(key, pruned_configs, benchmark)
+  File "/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 280, in check_disk_cache
+    bench_fn()
+  File "/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 411, in benchmark
+    timings[config] = self._bench(
+                      ^^^^^^^^^^^^
+TypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'
+Traceback (most recent call last):
+  File "/tmp/muse_bf16_proj-hjm795eo/run/worker.py", line 484, in child_main
+    out = kernel()(state.get("data"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/worker.py", line 415, in <lambda>
+    return functools.partial(lambda k, p, d: k(d, p), fn, state["prep"])
+                                             ^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/submission.py", line 87, in kernel_fn
+    return _torch(data, state)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/submission.py", line 37, in _torch
+    state["quack_fixed"](x, w.T, out, config=state["quack_config"], split_k=4, split_k_mode=2)
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 445, in __call__
+    self.check_disk_cache(key, pruned_configs, benchmark)
+  File "/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 280, in check_disk_cache
+    bench_fn()
+  File "/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 411, in benchmark
+    timings[config] = self._bench(
+                      ^^^^^^^^^^^^
+TypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'
+Traceback (most recent call last):
+  File "/tmp/muse_bf16_proj-hjm795eo/run/worker.py", line 484, in child_main
+    out = kernel()(state.get("data"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/worker.py", line 415, in <lambda>
+    return functools.partial(lambda k, p, d: k(d, p), fn, state["prep"])
+                                             ^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/submission.py", line 87, in kernel_fn
+    return _torch(data, state)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/muse_bf16_proj-hjm795eo/run/submission.py", line 37, in _torch
+    state["quack_fixed"](x, w.T, out, config=state["quack_config"], split_k=4, split_k_mode=2)
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 445, in __call__
+    self.check_disk_cache(key, pruned_configs, benchmark)
+  File "/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 280, in check_disk_cache
+    bench_fn()
+  File "/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py", line 411, in benchmark
+    timings[config] = self._bench(
+                      ^^^^^^^^^^^^
+TypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'

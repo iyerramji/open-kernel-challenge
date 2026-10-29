@@ -1,0 +1,88 @@
+{
+  "compression": [
+    {
+      "layer": "pooler",
+      "block": 32,
+      "common_blocks": 1046998,
+      "total_blocks": 1048576,
+      "estimated_bytes": 52454048,
+      "raw_bytes": 67108864,
+      "saving_fraction": 0.21837377548217773,
+      "note": "12-bit common block plus two-byte metadata; raw-block escape; roundtrip algebra exact, packed implementation not built"
+    },
+    {
+      "layer": "pooler",
+      "block": 128,
+      "common_blocks": 259475,
+      "total_blocks": 262144,
+      "estimated_bytes": 51026752,
+      "raw_bytes": 67108864,
+      "saving_fraction": 0.23964214324951172,
+      "note": "12-bit common block plus two-byte metadata; raw-block escape; roundtrip algebra exact, packed implementation not built"
+    },
+    {
+      "layer": "pooler",
+      "block": 256,
+      "common_blocks": 127581,
+      "total_blocks": 131072,
+      "estimated_bytes": 51040640,
+      "raw_bytes": 67108864,
+      "saving_fraction": 0.23943519592285156,
+      "note": "12-bit common block plus two-byte metadata; raw-block escape; roundtrip algebra exact, packed implementation not built"
+    },
+    {
+      "layer": "qkv_gate",
+      "block": 32,
+      "common_blocks": 588876,
+      "total_blocks": 589824,
+      "estimated_bytes": 29506368,
+      "raw_bytes": 37748736,
+      "saving_fraction": 0.21834818522135413,
+      "note": "12-bit common block plus two-byte metadata; raw-block escape; roundtrip algebra exact, packed implementation not built"
+    },
+    {
+      "layer": "qkv_gate",
+      "block": 128,
+      "common_blocks": 145893,
+      "total_blocks": 147456,
+      "estimated_bytes": 28706496,
+      "raw_bytes": 37748736,
+      "saving_fraction": 0.23953755696614587,
+      "note": "12-bit common block plus two-byte metadata; raw-block escape; roundtrip algebra exact, packed implementation not built"
+    },
+    {
+      "layer": "qkv_gate",
+      "block": 256,
+      "common_blocks": 71715,
+      "total_blocks": 73728,
+      "estimated_bytes": 28716672,
+      "raw_bytes": 37748736,
+      "saving_fraction": 0.23926798502604163,
+      "note": "12-bit common block plus two-byte metadata; raw-block escape; roundtrip algebra exact, packed implementation not built"
+    }
+  ],
+  "profiles": [
+    {
+      "m": 1,
+      "table": "-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nvoid sglang::hopper_bf16_gemv_kernel<4096u, 8192u, 1...         0.00%       0.000us         0.00%       0.000us       0.000us      18.241us       100.00%      18.241us      18.241us             1  \n                                            aten::slice         2.09%      46.843us         2.44%      54.507us      54.507us       0.000us         0.00%       0.000us       0.000us             1  \n                                       aten::as_strided         0.34%       7.664us         0.34%       7.664us       7.664us       0.000us         0.00%       0.000us       0.000us             1  \n                                            aten::empty         1.04%      23.167us         1.04%      23.167us      23.167us       0.000us         0.00%       0.000us       0.000us             1  \n                                    cudaLaunchKernelExC         2.37%      52.917us        95.79%       2.142ms       2.142ms       0.000us         0.00%       0.000us       0.000us             1  \n                                Activity Buffer Request        93.42%       2.089ms        93.42%       2.089ms       2.089ms       0.000us         0.00%       0.000us       0.000us             1  \n                                  cudaDeviceSynchronize         0.74%      16.582us         0.74%      16.582us       8.291us       0.000us         0.00%       0.000us       0.000us             2  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nSelf CPU time total: 2.236ms\nSelf CUDA time total: 18.241us\n"
+    },
+    {
+      "m": 8,
+      "table": "-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                               aten::mm         4.55%      77.130us        96.88%       1.642ms       1.642ms      19.074us       100.00%      19.074us      19.074us             1  \n          nvjet_sm90_tst_64x8_64x16_2x1_v_bz_splitK_NNT         0.00%       0.000us         0.00%       0.000us       0.000us      17.538us        91.95%      17.538us      17.538us             1  \nvoid cublasLt::splitKreduce_kernel<32, 16, int, floa...         0.00%       0.000us         0.00%       0.000us       0.000us       1.536us         8.05%       1.536us       1.536us             1  \n                                            aten::slice         1.84%      31.141us         2.12%      35.961us      35.961us       0.000us         0.00%       0.000us       0.000us             1  \n                                       aten::as_strided         0.28%       4.820us         0.28%       4.820us       4.820us       0.000us         0.00%       0.000us       0.000us             1  \n                                            aten::alias         0.21%       3.568us         0.21%       3.568us       3.568us       0.000us         0.00%       0.000us       0.000us             1  \n                                Activity Buffer Request        88.47%       1.499ms        88.47%       1.499ms       1.499ms       0.000us         0.00%       0.000us       0.000us             1  \n                                       cuLaunchKernelEx         2.52%      42.617us         2.52%      42.617us      42.617us       0.000us         0.00%       0.000us       0.000us             1  \n                                    cudaLaunchKernelExC         1.35%      22.816us         1.35%      22.816us      22.816us       0.000us         0.00%       0.000us       0.000us             1  \n                                  cudaDeviceSynchronize         0.78%      13.269us         0.78%      13.269us       6.635us       0.000us         0.00%       0.000us       0.000us             2  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nSelf CPU time total: 1.694ms\nSelf CUDA time total: 19.074us\n"
+    },
+    {
+      "m": 128,
+      "table": "-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                               aten::mm         5.08%      68.254us        97.72%       1.313ms       1.313ms      23.424us       100.00%      23.424us      23.424us             1  \n         nvjet_sm90_tst_128x64_64x8_1x2_h_bz_splitK_NNT         0.00%       0.000us         0.00%       0.000us       0.000us      20.384us        87.02%      20.384us      20.384us             1  \nvoid cublasLt::splitKreduce_kernel<32, 16, int, floa...         0.00%       0.000us         0.00%       0.000us       0.000us       3.040us        12.98%       3.040us       3.040us             1  \n                                            aten::slice         1.07%      14.339us         1.24%      16.613us      16.613us       0.000us         0.00%       0.000us       0.000us             1  \n                                       aten::as_strided         0.17%       2.274us         0.17%       2.274us       2.274us       0.000us         0.00%       0.000us       0.000us             1  \n                                            aten::alias         0.19%       2.505us         0.19%       2.505us       2.505us       0.000us         0.00%       0.000us       0.000us             1  \n                                Activity Buffer Request        89.71%       1.206ms        89.71%       1.206ms       1.206ms       0.000us         0.00%       0.000us       0.000us             1  \n                                       cuLaunchKernelEx         2.19%      29.422us         2.19%      29.422us      29.422us       0.000us         0.00%       0.000us       0.000us             1  \n                                    cudaLaunchKernelExC         0.74%       9.938us         0.74%       9.938us       9.938us       0.000us         0.00%       0.000us       0.000us             1  \n                                  cudaDeviceSynchronize         0.86%      11.552us         0.86%      11.552us       5.776us       0.000us         0.00%       0.000us       0.000us             2  \n-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nSelf CPU time total: 1.344ms\nSelf CUDA time total: 23.424us\n"
+    },
+    {
+      "m": 256,
+      "table": "-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                       Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  \n-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \n                                   aten::mm         8.09%      62.602us        96.66%     747.840us     747.840us      30.045us       100.00%      30.045us      30.045us             1  \n    nvjet_sm90_tst_128x64_64x8_1x2_h_bz_NNT         0.00%       0.000us         0.00%       0.000us       0.000us      30.045us       100.00%      30.045us      30.045us             1  \n                                aten::slice         1.62%      12.540us         1.90%      14.688us      14.688us       0.000us         0.00%       0.000us       0.000us             1  \n                           aten::as_strided         0.28%       2.148us         0.28%       2.148us       2.148us       0.000us         0.00%       0.000us       0.000us             1  \n                                aten::alias         0.28%       2.139us         0.28%       2.139us       2.139us       0.000us         0.00%       0.000us       0.000us             1  \n                    Activity Buffer Request        41.06%     317.654us        41.06%     317.654us     317.654us       0.000us         0.00%       0.000us       0.000us             1  \n                           cuLaunchKernelEx        47.51%     367.584us        47.51%     367.584us     367.584us       0.000us         0.00%       0.000us       0.000us             1  \n                      cudaDeviceSynchronize         1.16%       8.978us         1.16%       8.978us       4.489us       0.000us         0.00%       0.000us       0.000us             2  \n-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  \nSelf CPU time total: 773.645us\nSelf CUDA time total: 30.045us\n"
+    }
+  ],
+  "tools": {
+    "ncu": "/usr/local/cuda/bin/ncu",
+    "nsys": "/usr/local/bin/nsys",
+    "nvcc": "/usr/local/cuda/bin/nvcc"
+  },
+  "cuda_headers": ""
+}

@@ -1,0 +1,320 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-LEU6anCLkbUJHBBsv6bQ6E
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_codec1.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START v26_codec_pooler validate
+END v26_codec_pooler validate 0 _codec_pooler 256 o PASS
+v26_codec_pooler 256 pooler PASS
+v26_codec_pooler 256 unpooler PASS
+v26_codec_pooler 256 router PASS
+v26_codec_pooler 2 qkv_gate PASS
+v26_codec_pooler 2 o PASS
+v26_codec_pooler 2 pooler PASS
+v26_codec_pooler 2 unpooler PASS
+v26_codec_pooler 2 router PASS
+v26_codec_pooler 6 qkv_gate PASS
+v26_codec_pooler 6 o PASS
+v26_codec_pooler 6 pooler PASS
+v26_codec_pooler 6 unpooler PASS
+v26_codec_pooler 6 router PASS
+v26_codec_pooler 10 qkv_gate PASS
+v26_codec_pooler 10 o PASS
+v26_codec_pooler 10 pooler PASS
+v26_codec_pooler 10 unpooler PASS
+v26_codec_pooler 10 router PASS
+v26_codec_pooler 17 qkv_gate PASS
+v26_codec_pooler 17 o PASS
+v26_codec_pooler 17 pooler PASS
+v26_codec_pooler 17 unpooler PASS
+v26_codec_pooler 17 router PASS
+v26_codec_pooler 31 qkv_gate PASS
+v26_codec_pooler 31 o PASS
+v26_codec_pooler 31 pooler PASS
+v26_codec_pooler 31 unpooler PASS
+v26_codec_pooler 31 router PASS
+v26_codec_pooler 129 qkv_gate PASS
+v26_codec_pooler 129 o PASS
+v26_codec_pooler 129 pooler PASS
+v26_codec_pooler 129 unpooler PASS
+v26_codec_pooler 129 router PASS
+v26_codec_pooler 257 qkv_gate PASS
+v26_codec_pooler 257 o PASS
+v26_codec_pooler 257 pooler PASS
+v26_codec_pooler 257 unpooler PASS
+v26_codec_pooler 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 13:36:00,122 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START v26_codec_pooler bench
+END v26_codec_pooler bench 0  'baseline_us': 30.047999694943428, 'paired_speedup': 1.0496054584216505, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.263999812304974, 'baseline_us': 20.896000787615776, 'paired_speedup': 1.3691982987644502, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.55999833345413, 'baseline_us': 29.200000688433647, 'paired_speedup': 0.9011815111835008, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 13.98400031030178, 'baseline_us': 13.84000014513731, 'paired_speedup': 0.9907299959361098, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 36.928001791238785, 'baseline_us': 38.4799987077713, 'paired_speedup': 1.040702893359123, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 33.9680016040802, 'baseline_us': 33.67999941110611, 'paired_speedup': 0.9933805510587231, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.095999628305435, 'baseline_us': 21.856000646948814, 'paired_speedup': 1.361553277622805, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+START v27_raw_pooler_control validate
+END v27_raw_pooler_control validate 0  unpooler PASS
+v27_raw_pooler_control 256 router PASS
+v27_raw_pooler_control 2 qkv_gate PASS
+v27_raw_pooler_control 2 o PASS
+v27_raw_pooler_control 2 pooler PASS
+v27_raw_pooler_control 2 unpooler PASS
+v27_raw_pooler_control 2 router PASS
+v27_raw_pooler_control 6 qkv_gate PASS
+v27_raw_pooler_control 6 o PASS
+v27_raw_pooler_control 6 pooler PASS
+v27_raw_pooler_control 6 unpooler PASS
+v27_raw_pooler_control 6 router PASS
+v27_raw_pooler_control 10 qkv_gate PASS
+v27_raw_pooler_control 10 o PASS
+v27_raw_pooler_control 10 pooler PASS
+v27_raw_pooler_control 10 unpooler PASS
+v27_raw_pooler_control 10 router PASS
+v27_raw_pooler_control 17 qkv_gate PASS
+v27_raw_pooler_control 17 o PASS
+v27_raw_pooler_control 17 pooler PASS
+v27_raw_pooler_control 17 unpooler PASS
+v27_raw_pooler_control 17 router PASS
+v27_raw_pooler_control 31 qkv_gate PASS
+v27_raw_pooler_control 31 o PASS
+v27_raw_pooler_control 31 pooler PASS
+v27_raw_pooler_control 31 unpooler PASS
+v27_raw_pooler_control 31 router PASS
+v27_raw_pooler_control 129 qkv_gate PASS
+v27_raw_pooler_control 129 o PASS
+v27_raw_pooler_control 129 pooler PASS
+v27_raw_pooler_control 129 unpooler PASS
+v27_raw_pooler_control 129 router PASS
+v27_raw_pooler_control 257 qkv_gate PASS
+v27_raw_pooler_control 257 o PASS
+v27_raw_pooler_control 257 pooler PASS
+v27_raw_pooler_control 257 unpooler PASS
+v27_raw_pooler_control 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+
+START v27_raw_pooler_control bench
+END v27_raw_pooler_control bench 0 seline_us': 30.14400042593479, 'paired_speedup': 1.0476756604479016, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.296000055968761, 'baseline_us': 21.023999899625778, 'paired_speedup': 1.3810505282428447, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.496001571416855, 'baseline_us': 29.311999678611755, 'paired_speedup': 0.9058949703215208, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 13.968000188469887, 'baseline_us': 13.856000266969204, 'paired_speedup': 0.9930635554847451, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 36.81600093841553, 'baseline_us': 38.36800158023834, 'paired_speedup': 1.045855352564403, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 34.063998609781265, 'baseline_us': 33.76000002026558, 'paired_speedup': 0.9896616752356894, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.127999871969223, 'baseline_us': 21.91999927163124, 'paired_speedup': 1.3515936492888576, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+START v24_tiny_unpooler validate
+END v24_tiny_unpooler validate 0 npooler 128 unpooler PASS
+v24_tiny_unpooler 128 router PASS
+v24_tiny_unpooler 256 qkv_gate PASS
+v24_tiny_unpooler 256 o PASS
+v24_tiny_unpooler 256 pooler PASS
+v24_tiny_unpooler 256 unpooler PASS
+v24_tiny_unpooler 256 router PASS
+v24_tiny_unpooler 2 qkv_gate PASS
+v24_tiny_unpooler 2 o PASS
+v24_tiny_unpooler 2 pooler PASS
+v24_tiny_unpooler 2 unpooler PASS
+v24_tiny_unpooler 2 router PASS
+v24_tiny_unpooler 6 qkv_gate PASS
+v24_tiny_unpooler 6 o PASS
+v24_tiny_unpooler 6 pooler PASS
+v24_tiny_unpooler 6 unpooler PASS
+v24_tiny_unpooler 6 router PASS
+v24_tiny_unpooler 10 qkv_gate PASS
+v24_tiny_unpooler 10 o PASS
+v24_tiny_unpooler 10 pooler PASS
+v24_tiny_unpooler 10 unpooler PASS
+v24_tiny_unpooler 10 router PASS
+v24_tiny_unpooler 17 qkv_gate PASS
+v24_tiny_unpooler 17 o PASS
+v24_tiny_unpooler 17 pooler PASS
+v24_tiny_unpooler 17 unpooler PASS
+v24_tiny_unpooler 17 router PASS
+v24_tiny_unpooler 31 qkv_gate PASS
+v24_tiny_unpooler 31 o PASS
+v24_tiny_unpooler 31 pooler PASS
+v24_tiny_unpooler 31 unpooler PASS
+v24_tiny_unpooler 31 router PASS
+v24_tiny_unpooler 129 qkv_gate PASS
+v24_tiny_unpooler 129 o PASS
+v24_tiny_unpooler 129 pooler PASS
+v24_tiny_unpooler 129 unpooler PASS
+v24_tiny_unpooler 129 router PASS
+v24_tiny_unpooler 257 qkv_gate PASS
+v24_tiny_unpooler 257 o PASS
+v24_tiny_unpooler 257 pooler PASS
+v24_tiny_unpooler 257 unpooler PASS
+v24_tiny_unpooler 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+
+START v24_tiny_unpooler bench
+END v24_tiny_unpooler bench 0  'baseline_us': 30.14400042593479, 'paired_speedup': 1.0425703453752795, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 128, 'layer': 'router', 'load': 'verify 16', 'weight': 62, 'candidate_us': 15.424000099301338, 'baseline_us': 21.088000386953354, 'paired_speedup': 1.36728392936201, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'qkv_gate', 'load': 'verify 32', 'weight': 62, 'candidate_us': 32.09599852561951, 'baseline_us': 29.392000287771225, 'paired_speedup': 0.9198024176544992, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'o', 'load': 'verify 32', 'weight': 62, 'candidate_us': 14.384000096470118, 'baseline_us': 14.14399966597557, 'paired_speedup': 0.9853207268736877, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'pooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 36.94400005042553, 'baseline_us': 38.384001702070236, 'paired_speedup': 1.0399038247492722, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'unpooler', 'load': 'verify 32', 'weight': 62, 'candidate_us': 33.9680016040802, 'baseline_us': 33.9680016040802, 'paired_speedup': 0.9958701944957875, 'status': 'local diagnostic; raw graph cost included'}
+{'m': 256, 'layer': 'router', 'load': 'verify 32', 'weight': 62, 'candidate_us': 16.303999349474907, 'baseline_us': 22.048000246286392, 'paired_speedup': 1.3516712852390436, 'status': 'local diagnostic; raw graph cost included'}
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "v26_codec_pooler",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v26_codec_pooler",
+        "--output",
+        "/tmp/results/v26_codec_pooler-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v26_codec_pooler",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v26_codec_pooler.py",
+        "--reps",
+        "60",
+        "--output",
+        "/tmp/results/v26_codec_pooler-timings.csv"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v27_raw_pooler_control",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v27_raw_pooler_control",
+        "--output",
+        "/tmp/results/v27_raw_pooler_control-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v27_raw_pooler_control",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v27_raw_pooler_control.py",
+        "--reps",
+        "60",
+        "--output",
+        "/tmp/results/v27_raw_pooler_control-timings.csv"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v24_tiny_unpooler",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v24_tiny_unpooler",
+        "--output",
+        "/tmp/results/v24_tiny_unpooler-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v24_tiny_unpooler",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/bench.py",
+        "/work/candidates/v24_tiny_unpooler.py",
+        "--reps",
+        "60",
+        "--output",
+        "/tmp/results/v24_tiny_unpooler-timings.csv"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 13:35:43 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:73:00.0 Off |                    0 |\n| N/A   34C    P0             77W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 142.16632175445557
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-LEU6anCLkbUJHBBsv6bQ6E

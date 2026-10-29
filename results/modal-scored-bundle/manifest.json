@@ -1,0 +1,16 @@
+{
+  "evidence_type": "Modal diagnostic",
+  "files": {
+    "modal.log": "2afa8a109546be678a0250c47f98fd3cf5cd280344e6f04125a9d2a2c895d857",
+    "v34_official_bundle-validation.json": "11c10ffed686339c88505a6f216d518ae260d9acd7ce569b106ce4563b509811",
+    "lt-metadata.json": "3499207e2c8c6bdd66aebd42521089fc79066492e7e0a2ea36b214376a361347",
+    "gate.json": "dab0d65f3044e4ab8549eabbfc67678ff065bef79fb0749333751402c10e89b1",
+    "scored_bundle_repeat-bench.log": "21ea8c3b9d9ca12b8f92b184ccc29e01e4f21f2d59950930b91e44b961a01c97",
+    "modal_scored_bundle.py": "15f9910ae29ed9ce583b55fcb5d4e12928dd204746aa2e9750d87e2620d19d03",
+    "validate.py": "e9b22463be6d45c398f718d0145820e57ddbee6f491285f8c4da1285b288e1dc",
+    "scored_bundle_repeat.py": "e96823f7ee51b0917e82478cb3030f5eb9963ba942769bf0c3cd58145117f6ef",
+    "v34_official_bundle-validate.log": "13d51134b4fe00288d936e72ae67c7f9015e3086e4eba9776f48c839c74014d9",
+    "v34_official_bundle.py": "16062dfacb087e6e7931809ee08e7fd49c76b0d00412f998a2fb6605b71b729c",
+    "returned.json": "3da80c8baeae2ad665cf2fec7a91b4c8581d9122ba13fc4d164925f05b061dab"
+  }
+}

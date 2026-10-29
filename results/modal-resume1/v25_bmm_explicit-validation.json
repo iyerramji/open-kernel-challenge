@@ -1,0 +1,682 @@
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "records": [
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 7,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 8.226e-05 (worst row 1.741e-04)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 33,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 5.499e-05 (worst row 1.921e-04); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 130,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 9.283e-05 (worst row 2.417e-04); 22 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 5,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 6.976e-07 (worst row 1.893e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 8,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 2.421e-06 (worst row 2.543e-06); 1 probe rows exact to 2.5e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 9,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 2.527e-06 (worst row 2.754e-06); 1 probe rows exact to 2.2e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 512,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 2.288e-04 (worst row 5.412e-04); 62 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1000,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.522e-04 (worst row 3.756e-04); 134 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 1,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 1.138e-07 (worst row 1.138e-07)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 16,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 1.228e-04 (worst row 4.016e-04); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 16,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 4.041e-05 (worst row 9.853e-05); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 16,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.130e-04 (worst row 2.766e-04); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 16,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 9.404e-05 (worst row 2.148e-04); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 16,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 2.454e-06 (worst row 2.873e-06); 2 probe rows exact to 2.6e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 32,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 3.951e-05 (worst row 1.612e-04); 4 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 32,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 5.530e-05 (worst row 1.979e-04); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 32,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.129e-04 (worst row 2.803e-04); 9 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 32,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.028e-04 (worst row 1.936e-04); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 32,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 2.508e-06 (worst row 3.093e-06); 6 probe rows exact to 2.6e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 8,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 6.595e-05 (worst row 1.688e-04); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 8,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 7.526e-05 (worst row 1.800e-04); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 8,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 7.615e-05 (worst row 1.419e-04); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 8,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 8,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 2.473e-06 (worst row 2.814e-06); 3 probe rows exact to 2.8e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 128,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 9.573e-05 (worst row 3.312e-04); 12 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 128,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 4.200e-05 (worst row 1.754e-04); 18 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 128,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.028e-04 (worst row 2.771e-04); 12 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 128,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 9.471e-05 (worst row 2.344e-04); 16 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 128,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 3.204e-06 (worst row 3.600e-06); 12 probe rows exact to 2.7e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 256,
+      "layer": "qkv_gate",
+      "dist": "normal",
+      "check": "relative L2 error 1.068e-04 (worst row 3.681e-04); 29 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 256,
+      "layer": "o",
+      "dist": "normal",
+      "check": "relative L2 error 5.686e-05 (worst row 1.966e-04); 28 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 256,
+      "layer": "pooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.447e-04 (worst row 3.628e-04); 34 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 256,
+      "layer": "unpooler",
+      "dist": "normal",
+      "check": "relative L2 error 1.397e-04 (worst row 3.313e-04); 35 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 256,
+      "layer": "router",
+      "dist": "normal",
+      "check": "relative L2 error 3.180e-06 (worst row 3.735e-06); 29 probe rows exact to 2.7e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 2,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 1.372e-05 (worst row 1.382e-05); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 2,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 6.903e-05 (worst row 8.458e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 2,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 5.093e-05 (worst row 6.756e-05)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 2,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 2,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 2.546e-06 (worst row 2.568e-06)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 6,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 5.086e-05 (worst row 1.255e-04)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 6,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 6.786e-05 (worst row 8.609e-05); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 6,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.023e-04 (worst row 1.651e-04)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 6,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.006e-06 (worst row 2.590e-06)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 6,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 2.585e-06 (worst row 2.867e-06)",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 10,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 4.391e-05 (worst row 1.103e-04); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 10,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 7.069e-05 (worst row 1.290e-04); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 10,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 5.414e-05 (worst row 8.652e-05); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 10,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.400e-04 (worst row 1.981e-04); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 10,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 2.447e-06 (worst row 2.722e-06); 1 probe rows exact to 2.4e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 17,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 3.432e-05 (worst row 1.088e-04); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 17,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 6.702e-05 (worst row 1.688e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 17,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 7.821e-05 (worst row 1.548e-04); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 17,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.293e-04 (worst row 2.531e-04); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 17,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 2.498e-06 (worst row 2.794e-06); 3 probe rows exact to 2.5e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 31,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 6.317e-05 (worst row 2.042e-04); 3 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 31,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 5.965e-05 (worst row 1.673e-04); 5 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 31,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.226e-04 (worst row 2.849e-04); 8 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 31,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.198e-04 (worst row 2.143e-04); 2 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 31,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 2.510e-06 (worst row 2.827e-06); 3 probe rows exact to 2.7e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 129,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 1.108e-04 (worst row 4.307e-04); 12 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 129,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 6.027e-05 (worst row 2.351e-04); 24 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 129,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.062e-04 (worst row 3.389e-04); 11 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 129,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.063e-04 (worst row 2.215e-04); 16 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 129,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 3.455e-06 (worst row 3.910e-06); 18 probe rows exact to 2.9e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 257,
+      "layer": "qkv_gate",
+      "dist": "outliers",
+      "check": "relative L2 error 1.184e-04 (worst row 4.923e-04); 37 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 257,
+      "layer": "o",
+      "dist": "outliers",
+      "check": "relative L2 error 6.072e-05 (worst row 2.198e-04); 37 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 257,
+      "layer": "pooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.609e-04 (worst row 3.788e-04); 33 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 257,
+      "layer": "unpooler",
+      "dist": "outliers",
+      "check": "relative L2 error 1.509e-04 (worst row 3.272e-04); 35 probe rows exact to 0.0e+00",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "device": "cuda",
+      "m": 257,
+      "layer": "router",
+      "dist": "outliers",
+      "check": "relative L2 error 3.470e-06 (worst row 4.081e-06); 28 probe rows exact to 2.9e-06",
+      "mode": "official dimensions"
+    },
+    {
+      "candidate": "v25_bmm_explicit",
+      "check": "30 scored-shape fresh-input CUDA graph replays passed"
+    },
+    {
+      "check": "CPU router BF16 hi/lo algebra: relative L2 error 2.450e-06 (worst row 2.655e-06); 1 probe rows exact to 2.2e-06"
+    }
+  ],
+  "count": 76
+}

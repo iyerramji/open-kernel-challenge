@@ -1,0 +1,32 @@
+{
+  "job": "3de1392800fb4fd1",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v6_router_splitk.py",
+  "sha256": "7e8c77bcbb650f180a602d28bbbcf8f177b3b2631e9d15523f4e1f479f4525af",
+  "server_content_hash": "2d8a37c69a09a88512cc3299efaf9d288d00ed00342ec616598b1b586e6d7184",
+  "passed": true,
+  "speedup": 1.0433383857944425,
+  "speedup_ci": [
+    1.0276883100075258,
+    1.058988461581359
+  ],
+  "error": null,
+  "created_at": 1793251226.7967691,
+  "finished_at": 1793251280.4836826,
+  "gpu": "H200",
+  "files": {
+    "result.json": "17446a1cf92f52e86c07435fe5e811394456964cddf6362130e161e82ac876bd",
+    "v6_router_splitk.3de1392800fb4fd1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "submission.py": "7e8c77bcbb650f180a602d28bbbcf8f177b3b2631e9d15523f4e1f479f4525af",
+    "v6_router_splitk.3de1392800fb4fd1.json": "b8599a298d45fad30fbb294ff17ccdf8f67b5951c01cbb7b24b02b1e8939d9d2",
+    "returned-log-tail.txt": "cd43c30b304bf2cea2d96a48fe71d713cdaa96926291a1bd085e88db2b989280",
+    "v6_router_splitk.3de1392800fb4fd1.txt": "7b58227b1367815166f892a64a46acfdd518c77c6c74387d9bde0b410f6ccbe6",
+    "shapes.csv": "ed941a8d33993c41017b09a6d52bffd5e511e3014b95a666aa9b00ad6dcac3ea",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

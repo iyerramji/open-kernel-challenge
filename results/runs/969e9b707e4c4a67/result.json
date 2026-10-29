@@ -1,0 +1,202 @@
+{
+  "board": "muse_bf16_proj",
+  "call_id": "sfo3c:kc-969e9b707e4c4a67",
+  "cluster": "sfo3c",
+  "content_hash": "083dad6f4035adf57afdb1b24a1202a07cfaaead9b3d912d5d103a2414d52c61",
+  "created_at": 1793253560.506949,
+  "dedicated": false,
+  "duplicate_of": null,
+  "finished_at": 1793253600.09251,
+  "id": "969e9b707e4c4a67",
+  "limits": {
+    "scored": {
+      "per_day": 10,
+      "used": 0,
+      "left": 10
+    },
+    "checks": {
+      "per_day": 20,
+      "used": 13,
+      "left": 7
+    }
+  },
+  "mode": "check",
+  "output": {
+    "log": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/profiles/v15_quack_fixed_splitk.969e9b707e4c4a67.log"
+  },
+  "payload_ref": "muse_bf16_proj/083dad6f4035adf57afdb1b24a1202a07cfaaead9b3d912d5d103a2414d52c61.py",
+  "result": {
+    "checks": {
+      "flagged": [],
+      "ok": true,
+      "rejected": []
+    },
+    "error": null,
+    "evaluator": {
+      "code_sha256": "986ed3ebb096eab83d16797609f4c0e7895248d6bce33252d25dd306cbe5d018",
+      "files": {
+        "challenge/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+        "challenge/nvfp4.py": "cfdf37c7bc14b10f7353aba7d4632f4767401b92b4b073941a8030d9a961aaaf",
+        "configs/muse-spark-open.yaml": "98f07230e4e64fe91b7c76d9a3ce04948053c043d494d5f1fae56cfe2de033af",
+        "harness/eval.py": "0051a1bfac67a9f1fad06086b306653c6643b2bb253e15a794aa672312f070a9",
+        "harness/runner.py": "c905e5c80264c6d27620b6fc7d55b162dccdb8ed7282f8a513a4d2e6f2f226f2",
+        "harness/static_checks.py": "c5588b69e9e86229459a525c61b30096f6f13ff2add6cadf98f272c4ac8ca0c2",
+        "harness/worker.py": "950437610f57ddffbc1176b65d9c2ae909c47bf67b1e3fe0716a81946986f568",
+        "problems/muse_bf16_proj/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+        "problems/muse_bf16_proj/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+        "problems/muse_bf16_proj/task.yml": "18e9da6357144b0a1348434a18bd2d1938b1948d9f2130876f6b6706588470c9"
+      },
+      "image": "localhost:30500/kc/judge@sha256:9a7f287b80d772c6f636bbcb57422c619fe326e2aabc53803b85007bca93f68e"
+    },
+    "flags": [],
+    "gpu": "H200",
+    "log_tail": "Traceback (most recent call last):\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/worker.py\", line 484, in child_main\n    out = kernel()(state.get(\"data\"))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/worker.py\", line 415, in \u003clambda\u003e\n    return functools.partial(lambda k, p, d: k(d, p), fn, state[\"prep\"])\n                                             ^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/submission.py\", line 87, in kernel_fn\n    return _torch(data, state)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/submission.py\", line 37, in _torch\n    state[\"quack_fixed\"](x, w.T, out, config=state[\"quack_config\"], split_k=4, split_k_mode=2)\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 445, in __call__\n    self.check_disk_cache(key, pruned_configs, benchmark)\n  File \"/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1548, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 280, in check_disk_cache\n    bench_fn()\n  File \"/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1548, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 411, in benchmark\n    timings[config] = self._bench(\n                      ^^^^^^^^^^^^\nTypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'\nTraceback (most recent call last):\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/worker.py\", line 484, in child_main\n    out = kernel()(state.get(\"data\"))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/worker.py\", line 415, in \u003clambda\u003e\n    return functools.partial(lambda k, p, d: k(d, p), fn, state[\"prep\"])\n                                             ^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/submission.py\", line 87, in kernel_fn\n    return _torch(data, state)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/submission.py\", line 37, in _torch\n    state[\"quack_fixed\"](x, w.T, out, config=state[\"quack_config\"], split_k=4, split_k_mode=2)\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 445, in __call__\n    self.check_disk_cache(key, pruned_configs, benchmark)\n  File \"/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1548, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 280, in check_disk_cache\n    bench_fn()\n  File \"/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1548, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 411, in benchmark\n    timings[config] = self._bench(\n                      ^^^^^^^^^^^^\nTypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'\nTraceback (most recent call last):\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/worker.py\", line 484, in child_main\n    out = kernel()(state.get(\"data\"))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/worker.py\", line 415, in \u003clambda\u003e\n    return functools.partial(lambda k, p, d: k(d, p), fn, state[\"prep\"])\n                                             ^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/submission.py\", line 87, in kernel_fn\n    return _torch(data, state)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/muse_bf16_proj-hjm795eo/run/submission.py\", line 37, in _torch\n    state[\"quack_fixed\"](x, w.T, out, config=state[\"quack_config\"], split_k=4, split_k_mode=2)\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 445, in __call__\n    self.check_disk_cache(key, pruned_configs, benchmark)\n  File \"/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1548, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 280, in check_disk_cache\n    bench_fn()\n  File \"/opt/sglang/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py\", line 1548, in _fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/sglang/lib/python3.12/site-packages/quack/autotuner.py\", line 411, in benchmark\n    timings[config] = self._bench(\n                      ^^^^^^^^^^^^\nTypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'\n",
+    "machine": {
+      "gpu_after": {
+        "clocks.max.sm": 1980,
+        "clocks.mem": 3201,
+        "clocks.sm": 1980,
+        "driver_version": "580.178.04",
+        "name": "NVIDIA H200",
+        "power.draw": 121.18,
+        "power.limit": 700,
+        "temperature.gpu": 31
+      },
+      "gpu_before": {
+        "clocks.max.sm": 1980,
+        "clocks.mem": 3201,
+        "clocks.sm": 1980,
+        "driver_version": "580.178.04",
+        "name": "NVIDIA H200",
+        "power.draw": 130.63,
+        "power.limit": 700,
+        "temperature.gpu": 30
+      },
+      "node": "n-wsbc7j2d6xnjjdziaz2kmgurhe"
+    },
+    "passed": false,
+    "records": [
+      {
+        "baseline_copies": 16,
+        "baseline_prepare_pad": 17639936,
+        "copies": 10,
+        "error": null,
+        "event": "setup",
+        "first": "submission",
+        "prepare_pad": 9003520,
+        "prepare_s": 5.26210899,
+        "status": "pass"
+      },
+      {
+        "case": {
+          "layer": "qkv_gate",
+          "m": 1,
+          "seed": 3970025274163430432
+        },
+        "event": "test",
+        "index": 0,
+        "message": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+        "status": "pass"
+      },
+      {
+        "case": {
+          "layer": "pooler",
+          "m": 7,
+          "seed": 3970051283774890919
+        },
+        "event": "test",
+        "index": 1,
+        "message": "relative L2 error 1.214e-04 (worst row 1.749e-04)",
+        "status": "pass"
+      },
+      {
+        "case": {
+          "layer": "o",
+          "m": 33,
+          "seed": 3970077293386351407
+        },
+        "event": "test",
+        "index": 2,
+        "message": "relative L2 error 7.176e-05 (worst row 1.969e-04); 5 probe rows exact to 0.0e+00",
+        "status": "pass"
+      },
+      {
+        "case": {
+          "layer": "unpooler",
+          "m": 130,
+          "seed": 3970103302997811896
+        },
+        "event": "test",
+        "index": 3,
+        "message": "TypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'",
+        "status": "fail"
+      },
+      {
+        "case": {
+          "layer": "unpooler",
+          "m": 5,
+          "seed": 3970233351055114356
+        },
+        "event": "test",
+        "index": 4,
+        "message": "relative L2 error 1.282e-04 (worst row 2.411e-04)",
+        "status": "pass"
+      },
+      {
+        "case": {
+          "layer": "router",
+          "m": 8,
+          "seed": 3970129312609272386
+        },
+        "event": "test",
+        "index": 5,
+        "message": "relative L2 error 1.084e-07 (worst row 1.204e-07); 3 probe rows exact to 0.0e+00",
+        "status": "pass"
+      },
+      {
+        "case": {
+          "dist": "outliers",
+          "layer": "router",
+          "m": 9,
+          "seed": 3970155322220732877
+        },
+        "event": "test",
+        "index": 6,
+        "message": "relative L2 error 2.860e-06 (worst row 2.983e-06); 1 probe rows exact to 2.4e-06",
+        "status": "pass"
+      },
+      {
+        "case": {
+          "dist": "outliers",
+          "layer": "qkv_gate",
+          "m": 512,
+          "seed": 3970181331832193369
+        },
+        "event": "test",
+        "index": 7,
+        "message": "TypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'",
+        "status": "fail"
+      },
+      {
+        "case": {
+          "dist": "outliers",
+          "layer": "unpooler",
+          "m": 1000,
+          "seed": 3970207341443653862
+        },
+        "event": "test",
+        "index": 8,
+        "message": "TypeError: quack.autotuner.Autotuner._bench() got multiple values for keyword argument 'config'",
+        "status": "fail"
+      }
+    ],
+    "returncode": 112,
+    "score_us": null,
+    "speedup": null,
+    "speedup_ci": null,
+    "status": "ok"
+  },
+  "started_at": 1793253564.6674578,
+  "status": "done",
+  "team": "iyerramji"
+}

@@ -1,0 +1,176 @@
+(a: torch.Tensor, b: torch.Tensor, bias: Optional[torch.Tensor] = None, pdl: bool = False, out: Optional[torch.Tensor] = None, out_dtype: torch.dtype = torch.bfloat16, backend: Literal['cudnn', 'cutlass', 'tgv', 'cublaslt', 'tinygemm', 'cutile', 'cute-dsl', 'auto'] = 'cudnn') -> torch.Tensor
+@backend_requirement(
+    {
+        "cudnn": _cudnn_mm_bf16_requirement,
+        "cutlass": _cutlass_mm_bf16_requirement,
+        "tgv": _tgv_gemm_requirement,
+        "cublaslt": _cublaslt_mm_bf16_requirement,
+        "tinygemm": _tinygemm_mm_bf16_requirement,
+        "cutile": _cutile_mm_bf16_requirement,
+        "cute-dsl": _cute_dsl_mm_bf16_requirement,
+    },
+    common_check=_check_mm_bf16_problem_size,
+    heuristic_func=_heuristic_func_mm_bf16,
+)
+@flashinfer_api(trace=mm_bf16_trace)
+def mm_bf16(
+    a: torch.Tensor,
+    b: torch.Tensor,
+    bias: Optional[torch.Tensor] = None,
+    pdl: bool = False,
+    out: Optional[torch.Tensor] = None,
+    out_dtype: torch.dtype = torch.bfloat16,
+    backend: Literal[
+        "cudnn",
+        "cutlass",
+        "tgv",
+        "cublaslt",
+        "tinygemm",
+        "cutile",
+        "cute-dsl",
+        "auto",
+    ] = "cudnn",
+) -> torch.Tensor:
+    r"""MM BF16
+
+    Parameters
+    ----------
+    a: torch.Tensor
+        Input tensor, shape (m, k), bf16 in row-major layout.
+
+    b: torch.Tensor
+        Weight tensor, shape (k, n), bf16 in column-major layout.
+
+    bias: Optional[torch.Tensor]
+        Optional bias tensor, shape (n,). Enabled for TGV, TinyGEMM, and
+        CuTeDSL backends; cuBLASLt supports bias with BF16 output. Defaults to
+        ``None``.
+
+    pdl: bool
+        Whether to use Programmatic Dependent Launch. Enabled for TGV,
+        TinyGEMM, and CuTeDSL backends. The CuTeDSL M > 32 fallback ignores
+        PDL because cuBLASLt does not expose it. Defaults to ``False``.
+
+    out: Optional[torch.Tensor]
+        Out tensor, shape (m, n), bf16, fp16, or fp32. FP16 and FP32 output are enabled
+        for CUTLASS and cuDNN backends; TinyGEMM and CuTeDSL require bf16 output.
+
+    out_dtype: torch.dtype
+        Output dtype, bf16, fp16, or fp32. Enabled for CUTLASS, cuDNN, and cuBLASLt backends.
+        TinyGEMM and CuTeDSL require ``torch.bfloat16``. Defaults to
+        ``torch.bfloat16``.
+
+    backend: Literal["cudnn", "cutlass", "tgv", "cublaslt", "tinygemm", "cutile", "cute-dsl", "auto"]
+        The backend to use for the operation. Defaults to ``"cudnn"``.
+        ``"cudnn"`` uses the cuDNN backend.
+        ``"cutlass"`` uses the CUTLASS backend.
+        ``"tgv"`` uses the TGV backend.
+        ``"cublaslt"`` uses the cuBLASLt backend with heuristic algorithm
+        search and an optional fused BF16 bias epilogue for BF16 output.
+        ``"tinygemm"`` uses the TinyGEMM backend for small-M BF16 GEMM.
+        ``"cutile"`` uses the cuTile (cuda.tile Python) backend. Pure-Python
+            persistent-scheduled GEMM with per-shape exhaustive autotune; ignores
+            ``bias`` / ``pdl``. Requires SM >= 90.
+        ``"cute-dsl"`` uses standalone Blackwell low-M kernels for M <= 32
+        (direct, cluster Split-K and warp Split-K) and cuBLASLt above that.
+        It is never auto-selected; serving frameworks must select it
+        explicitly. Without autotuning, M > 32 runs cuBLASLt; below, the
+        direct kernel runs where its shape heuristic applies, otherwise the
+        warp Split-K kernel whenever it is eligible (N % 16 == 0, K % 128 == 0
+        with at most 64 K tiles; requires CuTe DSL >= 4.7), and cluster Split-K
+        otherwise. With autotuning, one call profiles the available low-M
+        kernels on the M <= 32 buckets and the cuBLASLt fallback on the larger
+        ones, so a single large-M warm-up tunes both ranges; with bias the
+        direct kernel is excluded.
+        ``"auto"`` allows selecting the best tactic from all available backends when autotune is enabled.
+
+    Returns
+    -------
+    torch.Tensor
+        Out tensor, shape (m, n), bf16, fp16, or fp32 in row-major layout.
+
+    Examples
+    --------
+    >>> import torch
+    >>> import flashinfer
+    >>> # Using the TGV backend
+    >>> a = torch.randn([48, 64], device="cuda", dtype=torch.bfloat16)
+    >>> b = torch.randn([80, 64], device="cuda", dtype=torch.bfloat16).transpose(-2, -1)
+    >>> bias = torch.randn([80], device="cuda", dtype=torch.bfloat16)
+    >>> out = flashinfer.mm_bf16(a, b, bias=bias, pdl=True, backend="tgv")
+    >>> out.shape
+    torch.Size([48, 80])
+    >>> out.dtype
+    torch.bfloat16
+    >>> # Using the CUTLASS backend
+    >>> fp16_out = torch.empty([48, 80], device="cuda", dtype=torch.float16)
+    >>> out = flashinfer.mm_bf16(a, b, out=fp16_out, out_dtype=torch.float16, backend="cutlass")
+    >>> out.shape
+    torch.Size([48, 80])
+    >>> out.dtype
+    torch.float16
+    >>> # Using the cuDNN backend
+    >>> out = flashinfer.mm_bf16(a, b, backend="cudnn")
+    >>> out.shape
+    torch.Size([48, 80])
+    >>> out.dtype
+    torch.bfloat16
+    >>> # Using the cuBLASLt backend
+    >>> out = flashinfer.mm_bf16(a, b, backend="cublaslt")
+    >>> out.shape
+    torch.Size([48, 80])
+    >>> out.dtype
+    torch.bfloat16
+    """
+
+    if out is None:
+        out = torch.empty(
+            (a.shape[0], b.shape[1]),
+            device=a.device,
+            dtype=out_dtype,
+        )
+
+    # cuTile backend: pure cuda.tile Python kernel, no shared C++ dispatcher.
+    # Handled before the SM100 dispatch table because it does not consume
+    # `workspace_buffer` and ignores `bias` / `pdl`.
+    if backend == "cutile":
+        from .kernels.cutile.mm_bf16_cutile import mm_bf16_cutile
+
+        # out_dtype validation already handled by ``_cutile_mm_bf16_requirement``
+        # via the ``@backend_requirement`` decorator (accepts bf16 / fp16 / fp32).
+        return mm_bf16_cutile(a, b, out)
+
+    workspace_buffer = _get_cache_buf(
+        "mm_bf16_workspace", DEFAULT_WORKSPACE_SIZE, a.device
+    )
+    if backend == "auto":
+        backends = mm_bf16.suitable_auto_backends
+    elif backend == "cudnn":
+        backends = _heuristic_func_mm_bf16(
+            ["cudnn"], a, b, None, False, out, out_dtype, backend
+        )
+    elif backend == "cutlass":
+        backends = _heuristic_func_mm_bf16(
+            ["cutlass"], a, b, None, False, out, out_dtype, backend
+        )
+    elif backend == "tgv":
+        backends = _heuristic_func_mm_bf16(
+            ["tgv"], a, b, bias, pdl, out, out_dtype, backend
+        )
+    elif backend == "cublaslt":
+        backends = _heuristic_func_mm_bf16(
+            ["cublaslt"], a, b, bias, pdl, out, out_dtype, backend
+        )
+    elif backend == "tinygemm":
+        backends = _heuristic_func_mm_bf16(
+            ["tinygemm"], a, b, bias, pdl, out, out_dtype, backend
+        )
+    elif backend == "cute-dsl":
+        # One runner set covers both M ranges (cuBLASLt above 32, ignoring
+        # pdl), so one autotune call profiles both; see _cute_dsl_bf16_runners.
+        backends = ["cute-dsl"]
+    else:
+        backends = [backend]
+
+    bf16_gemm_sm100(a, b, bias, pdl, out, workspace_buffer, backends)
+    return out

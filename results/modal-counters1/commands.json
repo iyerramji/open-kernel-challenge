@@ -1,0 +1,65 @@
+[
+  {
+    "candidate": "v24_tiny_unpooler",
+    "command": [
+      "/usr/local/cuda/bin/ncu",
+      "--profile-from-start",
+      "off",
+      "--replay-mode",
+      "application",
+      "--cache-control",
+      "none",
+      "--clock-control",
+      "none",
+      "--csv",
+      "--metrics",
+      "dram__bytes_read.sum,dram__bytes_write.sum,dram__throughput.avg.pct_of_peak_sustained_elapsed,sm__throughput.avg.pct_of_peak_sustained_elapsed,smsp__issue_active.avg.pct_of_peak_sustained_active,smsp__warps_eligible.avg.per_cycle_active,sm__warps_active.avg.pct_of_peak_sustained_active,launch__waves_per_multiprocessor,launch__registers_per_thread",
+      "python",
+      "/work/scripts/counter_probe.py",
+      "v24_tiny_unpooler"
+    ],
+    "returncode": 0
+  },
+  {
+    "candidate": "v27_raw_pooler_control",
+    "command": [
+      "/usr/local/cuda/bin/ncu",
+      "--profile-from-start",
+      "off",
+      "--replay-mode",
+      "application",
+      "--cache-control",
+      "none",
+      "--clock-control",
+      "none",
+      "--csv",
+      "--metrics",
+      "dram__bytes_read.sum,dram__bytes_write.sum,dram__throughput.avg.pct_of_peak_sustained_elapsed,sm__throughput.avg.pct_of_peak_sustained_elapsed,smsp__issue_active.avg.pct_of_peak_sustained_active,smsp__warps_eligible.avg.per_cycle_active,sm__warps_active.avg.pct_of_peak_sustained_active,launch__waves_per_multiprocessor,launch__registers_per_thread",
+      "python",
+      "/work/scripts/counter_probe.py",
+      "v27_raw_pooler_control"
+    ],
+    "returncode": 0
+  },
+  {
+    "candidate": "v26_codec_pooler",
+    "command": [
+      "/usr/local/cuda/bin/ncu",
+      "--profile-from-start",
+      "off",
+      "--replay-mode",
+      "application",
+      "--cache-control",
+      "none",
+      "--clock-control",
+      "none",
+      "--csv",
+      "--metrics",
+      "dram__bytes_read.sum,dram__bytes_write.sum,dram__throughput.avg.pct_of_peak_sustained_elapsed,sm__throughput.avg.pct_of_peak_sustained_elapsed,smsp__issue_active.avg.pct_of_peak_sustained_active,smsp__warps_eligible.avg.per_cycle_active,sm__warps_active.avg.pct_of_peak_sustained_active,launch__waves_per_multiprocessor,launch__registers_per_thread",
+      "python",
+      "/work/scripts/counter_probe.py",
+      "v26_codec_pooler"
+    ],
+    "returncode": 0
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "best": {
+    "candidate": "v21_safe_bundle.py",
+    "job": "433a8be9f5c14d37",
+    "mode": "run",
+    "status": "done",
+    "passed": true,
+    "speedup": 1.1582640667146247,
+    "ci": [
+      1.1408901057139054,
+      1.175638027715344
+    ],
+    "score_us": 4170.724223278717,
+    "created_at": 1793286590.431935,
+    "duplicate_of": null
+  },
+  "scored": [
+    {
+      "candidate": "v21_safe_bundle.py",
+      "job": "433a8be9f5c14d37",
+      "mode": "run",
+      "status": "done",
+      "passed": true,
+      "speedup": 1.1582640667146247,
+      "ci": [
+        1.1408901057139054,
+        1.175638027715344
+      ],
+      "score_us": 4170.724223278717,
+      "created_at": 1793286590.431935,
+      "duplicate_of": null
+    },
+    {
+      "candidate": "v34_official_bundle.py",
+      "job": "764ac132f5224473",
+      "mode": "run",
+      "status": "done",
+      "passed": true,
+      "speedup": 1.1560213464763613,
+      "ci": [
+        1.138681026279216,
+        1.1733616666735067
+      ],
+      "score_us": 4178.815568349699,
+      "created_at": 1793286850.255459,
+      "duplicate_of": null
+    },
+    {
+      "candidate": "v24_tiny_unpooler.py",
+      "job": "bc65b67e2cf64705",
+      "mode": "run",
+      "status": "done",
+      "passed": true,
+      "speedup": 1.1442934641919418,
+      "ci": [
+        1.1271290622290626,
+        1.1614578661548207
+      ],
+      "score_us": 4221.64431692471,
+      "created_at": 1793286590.241985,
+      "duplicate_of": null
+    },
+    {
+      "candidate": "v33_qkv_lt_checked.py",
+      "job": "f494abe5f9f94394",
+      "mode": "run",
+      "status": "done",
+      "passed": true,
+      "speedup": 1.1413050190903227,
+      "ci": [
+        1.1241854438039678,
+        1.1584245943766773
+      ],
+      "score_us": 4232.69846289679,
+      "created_at": 1793286472.5895808,
+      "duplicate_of": null
+    },
+    {
+      "candidate": "v12_wide_native.py",
+      "job": "e93e60835ffb4770",
+      "mode": "run",
+      "status": "done",
+      "passed": true,
+      "speedup": 1.1395992988172718,
+      "ci": [
+        1.1225053093350128,
+        1.1566932882995309
+      ],
+      "score_us": 4239.033847259844,
+      "created_at": 1793286590.8232782,
+      "duplicate_of": null
+    },
+    {
+      "candidate": "v20_router_group4.py",
+      "job": "14da83f6a21449d5",
+      "mode": "run",
+      "status": "done",
+      "passed": true,
+      "speedup": 1.1324504397463557,
+      "ci": [
+        1.1154636831501603,
+        1.149437196342551
+      ],
+      "score_us": 4265.793742887322,
+      "created_at": 1793286590.6221926,
+      "duplicate_of": null
+    }
+  ],
+  "leaderboard_you": {
+    "rank": 1039,
+    "team": "iyerramji",
+    "speedup": 1.1583,
+    "first": false,
+    "ahead": 1038,
+    "to_first": 1.413
+  },
+  "quota": {
+    "scored": {
+      "per_day": 10,
+      "used": 6,
+      "left": 4
+    },
+    "checks": {
+      "per_day": 20,
+      "used": 20,
+      "left": 0
+    }
+  }
+}

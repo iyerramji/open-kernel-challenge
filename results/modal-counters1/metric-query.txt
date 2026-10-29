@@ -1,0 +1,4 @@
+Device NVIDIA H200 (GH100)
+==WARNING== The below metrics are either invalid or don't have suffixes.
+launch__registers_per_thread,launch__waves_per_multiprocessor
+

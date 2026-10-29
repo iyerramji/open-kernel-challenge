@@ -1,0 +1,131 @@
+✓ Initialized. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-hpvvOim9rvx823xeBJBZny
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/modal_native1.py
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/bench.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/native_gate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/official/problem.json
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/scripts/validate.py
+├── ✓ Uploaded 
+│   /Users/ramjiiyer/git-clone/open-kernel-challenge/problems/muse_bf16_proj
+├── ✓ Uploaded /Users/ramjiiyer/git-clone/open-kernel-challenge/candidates
+└── ✓ Created Function run.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.3
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+START v28_native_raw validate
+END v28_native_raw validate 0 ooler PASS
+v28_native_raw 128 router PASS
+v28_native_raw 256 qkv_gate PASS
+v28_native_raw 256 o PASS
+v28_native_raw 256 pooler PASS
+v28_native_raw 256 unpooler PASS
+v28_native_raw 256 router PASS
+v28_native_raw 2 qkv_gate PASS
+v28_native_raw 2 o PASS
+v28_native_raw 2 pooler PASS
+v28_native_raw 2 unpooler PASS
+v28_native_raw 2 router PASS
+v28_native_raw 6 qkv_gate PASS
+v28_native_raw 6 o PASS
+v28_native_raw 6 pooler PASS
+v28_native_raw 6 unpooler PASS
+v28_native_raw 6 router PASS
+v28_native_raw 10 qkv_gate PASS
+v28_native_raw 10 o PASS
+v28_native_raw 10 pooler PASS
+v28_native_raw 10 unpooler PASS
+v28_native_raw 10 router PASS
+v28_native_raw 17 qkv_gate PASS
+v28_native_raw 17 o PASS
+v28_native_raw 17 pooler PASS
+v28_native_raw 17 unpooler PASS
+v28_native_raw 17 router PASS
+v28_native_raw 31 qkv_gate PASS
+v28_native_raw 31 o PASS
+v28_native_raw 31 pooler PASS
+v28_native_raw 31 unpooler PASS
+v28_native_raw 31 router PASS
+v28_native_raw 129 qkv_gate PASS
+v28_native_raw 129 o PASS
+v28_native_raw 129 pooler PASS
+v28_native_raw 129 unpooler PASS
+v28_native_raw 129 router PASS
+v28_native_raw 257 qkv_gate PASS
+v28_native_raw 257 o PASS
+v28_native_raw 257 pooler PASS
+v28_native_raw 257 unpooler PASS
+v28_native_raw 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 14:19:56,440 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.
+
+START v28_native_raw bench
+END v28_native_raw bench 0 {"rounds": [{"ratio": 0.9929260241936568, "candidate_us": 24.70399998128414, "control_us": 24.831999093294144}, {"ratio": 0.9910540234189231, "candidate_us": 24.720000103116035, "control_us": 24.927999824285507}], "gate_pass": true, "fresh_graphs_pass": true}
+
+STDERR
+
+{
+  "diagnostic_only": true,
+  "commands": [
+    {
+      "candidate": "v28_native_raw",
+      "mode": "validate",
+      "command": [
+        "python",
+        "/work/scripts/validate.py",
+        "--official",
+        "--device",
+        "cuda",
+        "--candidate",
+        "v28_native_raw",
+        "--output",
+        "/tmp/results/v28_native_raw-validation.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "candidate": "v28_native_raw",
+      "mode": "bench",
+      "command": [
+        "python",
+        "/work/scripts/native_gate.py"
+      ],
+      "returncode": 0
+    }
+  ],
+  "packages": {
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "sglang": "0.0.0.dev0",
+    "flashinfer-python": "0.7.0.post1"
+  },
+  "nvidia_smi": "Thu Oct 29 14:19:34 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 610.57.04              KMD Version: 610.57.04     CUDA UMD Version: 13.3     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA H200                    On  |   00000000:0A:00.0 Off |                    0 |\n| N/A   35C    P0             81W /  700W |       4MiB / 143771MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "elapsed_seconds": 103.84448599815369
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/iyer-ramji-c/main/ap-hpvvOim9rvx823xeBJBZny

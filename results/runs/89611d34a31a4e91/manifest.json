@@ -1,0 +1,32 @@
+{
+  "job": "89611d34a31a4e91",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v7_tensor_splitk.py",
+  "sha256": "3fc39d6106a7a982b9c4dbc584efa3f88c72ed971993c9d46b10de615d59fba4",
+  "server_content_hash": "5b5441c3f617502ca006663db244aa7fd1c8956e5058e376ef8f92752ce42d66",
+  "passed": true,
+  "speedup": 0.743910317651429,
+  "speedup_ci": [
+    0.7327516628866576,
+    0.7550689724162004
+  ],
+  "error": null,
+  "created_at": 1793251811.0094137,
+  "finished_at": 1793251865.819889,
+  "gpu": "H200",
+  "files": {
+    "v7_tensor_splitk.89611d34a31a4e91.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "result.json": "41b9bc913b2879b81742fb32adfcabd23c572121452c8ec9dc6afe7b3f01ffd0",
+    "submission.py": "3fc39d6106a7a982b9c4dbc584efa3f88c72ed971993c9d46b10de615d59fba4",
+    "v7_tensor_splitk.89611d34a31a4e91.txt": "9027d831f7647ec599543a7a73d89d0d0f9ba80c2ba9001691965a9edffc929f",
+    "returned-log-tail.txt": "7b1fa44fd2c7dc449f88f3af2ebe7b2c008ed33740a490c8c2f882cd474d01ff",
+    "shapes.csv": "2b7600a37c99d0db0ad3acd5c64803c7b7f884393d8aad306d5db961d7718398",
+    "v7_tensor_splitk.89611d34a31a4e91.json": "349e122f04c19bf356e61e4ffa2faa0b18e89232388eb0e1d9ecf5d3fff39a65",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

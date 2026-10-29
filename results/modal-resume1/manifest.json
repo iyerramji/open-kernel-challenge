@@ -1,0 +1,19 @@
+{
+  "results/modal-resume1/v12_wide_native-timings.metadata.json": "08b29858c948452be95bf284999f9c0f71de60341656ceacc2b1361d83a7e418",
+  "results/modal-resume1/v24_tiny_unpooler-validate.log": "690951c33cc8c54b2ab1b71fe8195d4a67c9587ab556854400ea45fe044b2912",
+  "results/modal-resume1/v12_wide_native-validate.log": "3238e545cfc9c09036795ef5b2a54fe56e0b46adfb9b10b1f14b38bc57cc514b",
+  "results/modal-resume1/modal.log": "d4357bdc69daa6a2adfe6a7d7412f71437dac901ad24a224fa3758d910d334b9",
+  "results/modal-resume1/v24_tiny_unpooler-validation.json": "83b1debefe649639ab3d51ee90714eeb1b4269344ed489571458a0039f1f3fe7",
+  "results/modal-resume1/v24_tiny_unpooler-timings.metadata.json": "d236eb384afca3c20e4f9fda78836fdbd642b33746d4e7795ad12185e9204a8f",
+  "results/modal-resume1/v12_wide_native-validation.json": "a9853252a33a936f3f91f2562157144642af7a974d1632888d6a8f6fdc1f8e09",
+  "results/modal-resume1/v25_bmm_explicit-validation.json": "5e6f7e72219323186aaa332b48e517284fd32dc4871bea199d1f0514830b6589",
+  "results/modal-resume1/v24_tiny_unpooler-timings.csv": "b4c0cd09bef8eb0042e97cab05881f7e052b720456ce5ec1e884a66f56a8bf23",
+  "results/modal-resume1/v25_bmm_explicit-validate.log": "ba8fa18d5d1e99915d416508d3c95aa5e11212f862acfde962a7eed8190b2426",
+  "results/modal-resume1/v24_tiny_unpooler-bench.log": "1345f8abaa7b5acbc4334125035ff988176328b8eb96386c09f4932b5e0ef8c7",
+  "results/modal-resume1/v25_bmm_explicit-bench.log": "30a28f255a3b3bbc763bd16f24136f03e522e78b9d594c7a76a7b8dfbc607518",
+  "results/modal-resume1/returned.json": "368d4a99b47f4414a71d112e4a4ed1834b65c11819df6ae7feb678da51abef5b",
+  "results/modal-resume1/v25_bmm_explicit-timings.metadata.json": "0324bcc60532811f1bd5665df467519d05fa48bc9adc4b7757910d1568d6d41c",
+  "results/modal-resume1/v12_wide_native-timings.csv": "04562bd98e3712a272a3f5b380b6da963c2f91da79929db762b3a8139e492c64",
+  "results/modal-resume1/v25_bmm_explicit-timings.csv": "63a50d8d168aa39a1b01de8a8f05aba429c9557c98c2bc59a88fe8a7e3bc78bd",
+  "results/modal-resume1/v12_wide_native-bench.log": "103b6e46166f9737315395ce2b647cd05a350202d8780b328ca369a3fef1eb7c"
+}

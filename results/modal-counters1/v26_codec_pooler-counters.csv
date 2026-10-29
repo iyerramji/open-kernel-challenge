@@ -1,0 +1,44 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 836 (/usr/bin/python3.12)
+==PROF== Disconnected from process 836
+==PROF== Connected to process 869 (/usr/bin/python3.12)
+==PROF== Disconnected from process 869
+==PROF== Connected to process 901 (/usr/bin/python3.12)
+==PROF== Disconnected from process 901
+==PROF== Connected to process 933 (/usr/bin/python3.12)
+==PROF== Disconnected from process 933
+==PROF== Connected to process 965 (/usr/bin/python3.12)
+==PROF== Disconnected from process 965
+==PROF== Connected to process 997 (/usr/bin/python3.12)
+==PROF== Disconnected from process 997
+==PROF== Connected to process 1029 (/usr/bin/python3.12)
+==PROF== Disconnected from process 1029
+==PROF== Connected to process 1065 (/usr/bin/python3.12)
+==PROF== Disconnected from process 1065
+==PROF== Connected to process 1099 (/usr/bin/python3.12)
+==PROF== Disconnected from process 1099
+==PROF== Connected to process 1131 (/usr/bin/python3.12)
+==PROF== Disconnected from process 1131
+==PROF== Creating report from application replay data: 0%..................100%
+"ID","Process ID","Process Name","Host Name","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","dram__bytes_read.sum","byte","51,601,664"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","dram__bytes_write.sum","byte","25,047,808"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","dram__throughput.avg.pct_of_peak_sustained_elapsed","%","45.42"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","launch__registers_per_thread","register/thread","40"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","launch__waves_per_multiprocessor","","2.59"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","sm__throughput.avg.pct_of_peak_sustained_elapsed","%","69.78"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","sm__warps_active.avg.pct_of_peak_sustained_active","%","65.70"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","smsp__issue_active.avg.pct_of_peak_sustained_active","%","76.21"
+"0","836","python3.12","127.0.0.1","_codec","1","7","(128, 1, 1)","(1024, 4, 1)","0","9.0","Command line profiler metrics","smsp__warps_eligible.avg.per_cycle_active","warp","2.60"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","dram__bytes_read.sum","byte","8,448"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","dram__bytes_write.sum","byte","4,352"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","dram__throughput.avg.pct_of_peak_sustained_elapsed","%","0.11"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","launch__registers_per_thread","register/thread","16"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","launch__waves_per_multiprocessor","","0.01"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","sm__throughput.avg.pct_of_peak_sustained_elapsed","%","0.09"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","sm__warps_active.avg.pct_of_peak_sustained_active","%","5.54"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","smsp__issue_active.avg.pct_of_peak_sustained_active","%","4.62"
+"1","836","python3.12","127.0.0.1","_reduce","1","7","(128, 1, 1)","(16, 1, 1)","0","9.0","Command line profiler metrics","smsp__warps_eligible.avg.per_cycle_active","warp","0.05"
+
+STDERR

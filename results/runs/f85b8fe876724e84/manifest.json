@@ -1,0 +1,32 @@
+{
+  "job": "f85b8fe876724e84",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v3_splitk_gemv.py",
+  "sha256": "45eb3c437864fbc3a60cca332be66213338f63f8775d0f3a3df6e06d7de74535",
+  "server_content_hash": "08f8485104423e90fdb57351a5b9a1e50b870800475a19fac91c71107e702363",
+  "passed": true,
+  "speedup": 0.8502392496439442,
+  "speedup_ci": [
+    0.837485660899285,
+    0.8629928383886032
+  ],
+  "error": null,
+  "created_at": 1793251126.8199716,
+  "finished_at": 1793251176.2685812,
+  "gpu": "H200",
+  "files": {
+    "v3_splitk_gemv.f85b8fe876724e84.txt": "2212733ff9f2d77db9628d9a005984f6f360cff52c5509a9a0bee63dccef1aaa",
+    "result.json": "3fa489e633dc40d8a697ae880e94820d09a440a9a84410df01530da16a70ff1d",
+    "submission.py": "45eb3c437864fbc3a60cca332be66213338f63f8775d0f3a3df6e06d7de74535",
+    "v3_splitk_gemv.f85b8fe876724e84.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "returned-log-tail.txt": "f02d1a2dc4cc2ffc1da0dfaff733002708159561beeff2c3bb6ee37be3e74daf",
+    "shapes.csv": "4531d7fa32e29138c542432bb8265bd569af7b0201b3c9cdaf18bf73c4421a6a",
+    "v3_splitk_gemv.f85b8fe876724e84.json": "273f2f6be24cacdb0e62fa1a5b0cbdfb451432dc7316a7c92cbd46c8eb6ddf42",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

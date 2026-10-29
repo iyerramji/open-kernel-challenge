@@ -1,0 +1,32 @@
+{
+  "job": "9a6da5bd038c414e",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v14_hopper_quack.py",
+  "sha256": "c531b36041515b987c664f0a632ef6430f5230dc53b302dffd7a40bb4dce44e7",
+  "server_content_hash": "3201d2a50e331363637fef2149cb743f8f1848f46a5f6542d79e931bdea47b6d",
+  "passed": true,
+  "speedup": 0.9004642966982359,
+  "speedup_ci": [
+    0.8869573322477624,
+    0.9139712611487094
+  ],
+  "error": null,
+  "created_at": 1793253416.976812,
+  "finished_at": 1793253502.7343426,
+  "gpu": "H200",
+  "files": {
+    "result.json": "5ca91b55b814cf936e5ce0b147fbd3fc3fe5300dccccd88c98b5161dc96e2bbd",
+    "v14_hopper_quack.9a6da5bd038c414e.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "submission.py": "c531b36041515b987c664f0a632ef6430f5230dc53b302dffd7a40bb4dce44e7",
+    "v14_hopper_quack.9a6da5bd038c414e.json": "e244a723abc19bd27f12e37a2fc576b35a98d98049eecbe401f7b3f216d3adc6",
+    "returned-log-tail.txt": "dd4adf16f1f36759be5557f38631968a8e07b9e736473faad08c43c43a506d75",
+    "shapes.csv": "6d58a5cfb33f7805c7530e30743eb4ebb667cbac4102810dbc9572ede1099b15",
+    "v14_hopper_quack.9a6da5bd038c414e.txt": "f5cceefdb944b94ae47f327ca473e6631698dcaf71865a0dbea6e4961707d4c8",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "/Users/ramjiiyer/Downloads/muse_bf16_proj_v13_tinygemm_candidate.py",
+  "candidate": "/Users/ramjiiyer/git-clone/open-kernel-challenge/candidates/v22_flashinfer_tinygemm.py",
+  "sha256": "e7fcfb1fa362d5301648cc3909df5c3379a702b0b3a856a64433b00aa6c9219a",
+  "status": "official H200 check passed; aggregate tied with v12 within uncertainty",
+  "gpu_check_spent": true,
+  "notes": [
+    "Targets exclude FP32 router",
+    "Original BF16 weights contiguous; synthetic warmups not retained",
+    "PDL disabled; metadata-only dispatch",
+    "Pinned installed FlashInfer API and CUDA numerical/capture/performance remain unverified"
+  ],
+  "job": "b5024e063ec34b1b",
+  "speedup": 1.1362592079653853,
+  "speedup_ci": [
+    1.1192153198459045,
+    1.153303096084866
+  ],
+  "selected": false
+}

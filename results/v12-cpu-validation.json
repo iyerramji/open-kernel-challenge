@@ -1,0 +1,532 @@
+{
+  "device": "cpu",
+  "torch": "2.15.0",
+  "cuda": null,
+  "gpu_kernels_executed": false,
+  "records": [
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1,
+      "layer": "router",
+      "check": "relative L2 error 9.829e-08 (worst row 9.829e-08)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 5,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 5,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 5,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 5,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 5,
+      "layer": "router",
+      "check": "relative L2 error 2.733e-07 (worst row 3.131e-07)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 7,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 7,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 7,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 7,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 7,
+      "layer": "router",
+      "check": "relative L2 error 2.637e-07 (worst row 3.013e-07)",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 8,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 8,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 8,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 8,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 8,
+      "layer": "router",
+      "check": "relative L2 error 1.730e-07 (worst row 3.560e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 9,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 9,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 9,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 9,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 9,
+      "layer": "router",
+      "check": "relative L2 error 1.578e-07 (worst row 3.159e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 16,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 4.018e-08 (worst row 2.247e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 16,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 16,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 16,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 16,
+      "layer": "router",
+      "check": "relative L2 error 2.131e-07 (worst row 3.864e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 32,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 32,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 32,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 32,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 32,
+      "layer": "router",
+      "check": "relative L2 error 2.351e-07 (worst row 4.130e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 33,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 33,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 33,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 33,
+      "layer": "unpooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 33,
+      "layer": "router",
+      "check": "relative L2 error 2.353e-07 (worst row 3.993e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 128,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 2.177e-07 (worst row 1.915e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 128,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 128,
+      "layer": "pooler",
+      "check": "relative L2 error 1.572e-07 (worst row 1.817e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 128,
+      "layer": "unpooler",
+      "check": "relative L2 error 7.788e-08 (worst row 9.593e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 128,
+      "layer": "router",
+      "check": "relative L2 error 2.724e-07 (worst row 3.802e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 130,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 130,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 130,
+      "layer": "pooler",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 130,
+      "layer": "unpooler",
+      "check": "relative L2 error 1.132e-07 (worst row 9.413e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 130,
+      "layer": "router",
+      "check": "relative L2 error 2.724e-07 (worst row 4.465e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 256,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 8.933e-10 (worst row 1.501e-08); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 256,
+      "layer": "o",
+      "check": "relative L2 error 0.000e+00 (worst row 0.000e+00); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 256,
+      "layer": "pooler",
+      "check": "relative L2 error 2.909e-08 (worst row 4.750e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 256,
+      "layer": "unpooler",
+      "check": "relative L2 error 7.447e-06 (worst row 1.275e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 256,
+      "layer": "router",
+      "check": "relative L2 error 2.821e-07 (worst row 4.829e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 512,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 4.240e-05 (worst row 9.032e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 512,
+      "layer": "o",
+      "check": "relative L2 error 2.597e-09 (worst row 6.071e-08); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 512,
+      "layer": "pooler",
+      "check": "relative L2 error 3.312e-07 (worst row 6.858e-06); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 512,
+      "layer": "unpooler",
+      "check": "relative L2 error 5.890e-06 (worst row 1.047e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 512,
+      "layer": "router",
+      "check": "relative L2 error 2.894e-07 (worst row 4.090e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1000,
+      "layer": "qkv_gate",
+      "check": "relative L2 error 4.067e-06 (worst row 1.407e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1000,
+      "layer": "o",
+      "check": "relative L2 error 1.481e-08 (worst row 4.402e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1000,
+      "layer": "pooler",
+      "check": "relative L2 error 1.569e-05 (worst row 5.213e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1000,
+      "layer": "unpooler",
+      "check": "relative L2 error 1.525e-05 (worst row 4.234e-04); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "candidate": "v12_wide_native",
+      "device": "cpu",
+      "m": 1000,
+      "layer": "router",
+      "check": "relative L2 error 2.867e-07 (worst row 4.456e-07); 1 probe rows exact to 0.0e+00",
+      "mode": "compact CPU fallback"
+    },
+    {
+      "check": "CPU router BF16 hi/lo algebra: relative L2 error 2.611e-06 (worst row 2.813e-06); 1 probe rows exact to 2.2e-06"
+    }
+  ],
+  "count": 66
+}

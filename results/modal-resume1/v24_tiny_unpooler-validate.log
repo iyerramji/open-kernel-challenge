@@ -1,0 +1,84 @@
+v24_tiny_unpooler 1 qkv_gate PASS
+v24_tiny_unpooler 7 pooler PASS
+v24_tiny_unpooler 33 o PASS
+v24_tiny_unpooler 130 unpooler PASS
+v24_tiny_unpooler 5 unpooler PASS
+v24_tiny_unpooler 8 router PASS
+v24_tiny_unpooler 9 router PASS
+v24_tiny_unpooler 512 qkv_gate PASS
+v24_tiny_unpooler 1000 unpooler PASS
+v24_tiny_unpooler 1 qkv_gate PASS
+v24_tiny_unpooler 1 o PASS
+v24_tiny_unpooler 1 pooler PASS
+v24_tiny_unpooler 1 unpooler PASS
+v24_tiny_unpooler 1 router PASS
+v24_tiny_unpooler 16 qkv_gate PASS
+v24_tiny_unpooler 16 o PASS
+v24_tiny_unpooler 16 pooler PASS
+v24_tiny_unpooler 16 unpooler PASS
+v24_tiny_unpooler 16 router PASS
+v24_tiny_unpooler 32 qkv_gate PASS
+v24_tiny_unpooler 32 o PASS
+v24_tiny_unpooler 32 pooler PASS
+v24_tiny_unpooler 32 unpooler PASS
+v24_tiny_unpooler 32 router PASS
+v24_tiny_unpooler 8 qkv_gate PASS
+v24_tiny_unpooler 8 o PASS
+v24_tiny_unpooler 8 pooler PASS
+v24_tiny_unpooler 8 unpooler PASS
+v24_tiny_unpooler 8 router PASS
+v24_tiny_unpooler 128 qkv_gate PASS
+v24_tiny_unpooler 128 o PASS
+v24_tiny_unpooler 128 pooler PASS
+v24_tiny_unpooler 128 unpooler PASS
+v24_tiny_unpooler 128 router PASS
+v24_tiny_unpooler 256 qkv_gate PASS
+v24_tiny_unpooler 256 o PASS
+v24_tiny_unpooler 256 pooler PASS
+v24_tiny_unpooler 256 unpooler PASS
+v24_tiny_unpooler 256 router PASS
+v24_tiny_unpooler 2 qkv_gate PASS
+v24_tiny_unpooler 2 o PASS
+v24_tiny_unpooler 2 pooler PASS
+v24_tiny_unpooler 2 unpooler PASS
+v24_tiny_unpooler 2 router PASS
+v24_tiny_unpooler 6 qkv_gate PASS
+v24_tiny_unpooler 6 o PASS
+v24_tiny_unpooler 6 pooler PASS
+v24_tiny_unpooler 6 unpooler PASS
+v24_tiny_unpooler 6 router PASS
+v24_tiny_unpooler 10 qkv_gate PASS
+v24_tiny_unpooler 10 o PASS
+v24_tiny_unpooler 10 pooler PASS
+v24_tiny_unpooler 10 unpooler PASS
+v24_tiny_unpooler 10 router PASS
+v24_tiny_unpooler 17 qkv_gate PASS
+v24_tiny_unpooler 17 o PASS
+v24_tiny_unpooler 17 pooler PASS
+v24_tiny_unpooler 17 unpooler PASS
+v24_tiny_unpooler 17 router PASS
+v24_tiny_unpooler 31 qkv_gate PASS
+v24_tiny_unpooler 31 o PASS
+v24_tiny_unpooler 31 pooler PASS
+v24_tiny_unpooler 31 unpooler PASS
+v24_tiny_unpooler 31 router PASS
+v24_tiny_unpooler 129 qkv_gate PASS
+v24_tiny_unpooler 129 o PASS
+v24_tiny_unpooler 129 pooler PASS
+v24_tiny_unpooler 129 unpooler PASS
+v24_tiny_unpooler 129 router PASS
+v24_tiny_unpooler 257 qkv_gate PASS
+v24_tiny_unpooler 257 o PASS
+v24_tiny_unpooler 257 pooler PASS
+v24_tiny_unpooler 257 unpooler PASS
+v24_tiny_unpooler 257 router PASS
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu_kernels_executed": true,
+  "count": 76
+}
+
+STDERR
+2026-10-29 13:03:20,101 - INFO - core.py:564 - flashinfer.jit: Building JIT module tinygemm2; this can take several minutes on first use.

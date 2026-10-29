@@ -1,0 +1,32 @@
+{
+  "job": "6ae7ccfd2e6f4648",
+  "mode": "check",
+  "status": "done",
+  "source": "/Users/ramjiiyer/git-clone/open-kernel-challenge/racer/muse_bf16_proj/submission.py",
+  "sha256": "38d8430a903a8c9b19c903d30f88b4d743ceb716794a682a652a800b5dfba18f",
+  "server_content_hash": "73892997a737df87ddbc89409d8e407930ac97e5a64e2e908c7ed9bfd379a8f1",
+  "passed": true,
+  "speedup": 0.7953278902219341,
+  "speedup_ci": [
+    0.783397971868605,
+    0.807257808575263
+  ],
+  "error": null,
+  "created_at": 1793251052.697521,
+  "finished_at": 1793251111.6930807,
+  "gpu": "H200",
+  "files": {
+    "result.json": "3cc2ce05f0cc6bcf01ff5e93a46439fc6730ae2ec2278cfe5f4f27cca0d2aea3",
+    "submission.py": "38d8430a903a8c9b19c903d30f88b4d743ceb716794a682a652a800b5dfba18f",
+    "submission.6ae7ccfd2e6f4648.txt": "901d8996d6542f8cbe3af6b65183c6145caa64751eb5e5245ee45998b2e2c9fe",
+    "returned-log-tail.txt": "6ada8df3739d75553c06c959d97813a9b82081060e83024f72f29efea8d8bde6",
+    "shapes.csv": "66d2c97e118cd177af39ad4a93b428c2fe2cef3332ade5c74910ecac55982c7b",
+    "submission.6ae7ccfd2e6f4648.json": "29a1ced10e4d8ed1fa7ba6b64e157c773401fb583030b7568f84c75bfecc9e05",
+    "submission.6ae7ccfd2e6f4648.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official-interface/baseline.py": "39f52ea5b65505958aa9dee9c8129dd394cbba4e670046f862b5a88ce91a0574",
+    "official-interface/checks.py": "9a046c3c38db28b325dcd1557baecdf6bc9ef941d2175f9a900ba4c230bb8055",
+    "official-interface/reference.py": "e62491abc9ddcad33f5faba8b0ee74cf6370b7be5dd2dc05031742f3ebf7147d",
+    "official-interface/TASK.md": "deb9118fa75cbc03c2ebd16b283e72a0314168d40299fa7501373eb1960a2bc4",
+    "official-interface/AGENTS.md": "d6f3fb0cedb7cfac9aaef929c5ec2999eba5e1103cc3fa240f49de4e732e21fc"
+  }
+}

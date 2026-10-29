@@ -1,0 +1,16 @@
+# Pinned SGLang inspection and integration
+
+Official serving API identifies https://github.com/sgl-project/sglang at **a55ab7d5ae1bba59ac351e55026fe7f7644ecc5f**, checked out detached in repos/sglang. This is the actual challenge pin, not guessed latest upstream. Runtime: `lmsysorg/sglang@sha256:8cfc5a72cb296771f5f8a4a4688cb6d05685610a830cbb616fa4ab0eb7bb2b0a` (descriptive tag dev-muse-spark-open).
+
+Inspected paths relative to repos/sglang:
+
+- `python/sglang/srt/layers/quantization/unquant.py`, `_bf16_gemm_dispatch_impl` ~421: normal F.linear/cuBLAS fallback. Optional native Hopper GEMV, CuTe DSL and split-K hooks exist; presence does not prove activation in the official recipe. Official downloaded baseline states cuBLAS on H200.
+- `python/sglang/srt/models/muse_spark.py`, `MuseSpark1xRouter._build_split2` / `forward_split2` ~275–291: prepare BF16 hi/lo and execute two FP32-output GEMMs. `_use_split_bf16_router` gates above 8 tokens on Hopper. `post_expert_proj` ~773 and pooler ~854 connect projections to MoE. Preserve serving unpooler slice/all-gather: standalone problem omits the all-gather.
+- `python/sglang/kernels/ops/gemm/hopper_bf16_gemv.py` and `kernels/jit/csrc/gemm/hopper_bf16_gemv.cuh`: custom single-token GEMV. Comments claim measured H200 cuBLAS 3.2–3.9 TB/s vs 4.3 TB/s copy ceiling for particular shapes. These are upstream claims, not our measurements or proof for the exact challenge baseline.
+- `python/sglang/kernels/ops/muse_spark_v12/router_gemm.py`: skinny FP32 router split-K, MAX_TOKENS=8. Tuning comment is B300, not H200 evidence.
+- `python/sglang/srt/layers/muse_spark_fp4_moe.py`: post-expert norm/weighted sum; Marlin for pre-SM100. `kernels/ops/moe/moe_wna16_marlin.py` wrapper. Not changed.
+- `docker/muse_spark/muse-spark.Dockerfile`: Muse branch, torch 2.14.1, FlashInfer 0.7.0.post1, quack 0.6.5, CUTLASS DSL 4.8.0 and patched SGLang DeepGEMM fork at **cbe1727eacd9ad704795584ce1421dd1f5a8d67e**. That exact custom fork is cloned in repos/sglang-DeepGEMM. Patch helper files remain under docker/muse_spark/. Source pins are evidence, not verification of installed image packages. Helpers/Dockerfile were not executed and custom fork not built/patched locally.
+
+After GPU correctness/gain: add a narrow helper under python/sglang/kernels/ops/gemm/, gate compatible Muse shapes/dtypes in unquant.py, integrate router through forward_split2, prepare weights after loading while preserving registered names/shapes. Preserve bias/addend semantics and all other models on current dispatch. unquant.py is shared, so replacing all dispatch would be inappropriate. Keep all-gather and residual/norm semantics. Add capture/nearby-shape/output tests, then end-to-end serving TTFT/throughput validation. Do not copy CPU fallback into production scheduling logic.
+
+No SGLang edits or serving patch were made; all source clones remain clean. No loader or prebuilt extension changed. Read local component instructions before later integration. `.claude/rules/kernel-benchmark.md` requires valid cache handling and allows marker/CUPTI/torch/Triton/Nsight timing. `.agents/skills` was inventoried; no workflow matched this read-only source inspection. No unrelated code was modified.

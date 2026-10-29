@@ -1,0 +1,14 @@
+{
+  "status": "NOT_RUN",
+  "candidate": null,
+  "sha256": null,
+  "official_job": null,
+  "gpu": null,
+  "image": null,
+  "packages": null,
+  "correctness": null,
+  "aggregate_speedup": null,
+  "confidence_interval_95": null,
+  "profile": null,
+  "notes": "Populate only after an actual run; null is unknown."
+}
