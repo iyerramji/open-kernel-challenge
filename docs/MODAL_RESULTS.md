@@ -8,7 +8,7 @@ These measurements are deliberately separate from [official challenge evidence](
 
 - **Performance reference: v30_qkv_lt.py.** Prior direct paired comparison measured **1.010833x v24** across six weighted loads. QKV128:24.320 versus26.976us; QKV256:27.296 versus32.896us. All other paths retain v24. Exact samples: `results/modal-backends4/gate.json`.
 - **Checked implementation: v33_qkv_lt_checked.py.** Same scheduling choices as v30, typed cuBLASLt structures plus returned-state/workspace validation and `AlgoCheck`. Full validation passed. Direct30-shape test with independent weight seed6102 and outlier/fresh inputs measured **0.999271x v30**, effectively unchanged. This is a reliability revision, not another speedup.
-- **Official working file remains v12.** No official check or scored submission was launched in this review.
+- **Official working file is now v21**, selected in the subsequent six-entry scored pass. This Modal review itself did not submit official entries; see the separate scored results.
 
 ## New revisions and outcomes
 

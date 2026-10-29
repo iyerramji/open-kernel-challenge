@@ -200,8 +200,8 @@
     "transformation": null
   },
   "docs/EXECUTIVE_SUMMARY.md": {
-    "sha256": "6179272c07a65f9c959a249123180b9fed5084bf5c09fdad206c799748722a35",
-    "source_sha256": "6179272c07a65f9c959a249123180b9fed5084bf5c09fdad206c799748722a35",
+    "sha256": "0d2ae9c131fc4399838bfbe1b8bfa1c6e6984c434f89f9a6898945cc3ca296e0",
+    "source_sha256": "0d2ae9c131fc4399838bfbe1b8bfa1c6e6984c434f89f9a6898945cc3ca296e0",
     "transformation": null
   },
   "docs/EXTERNAL_REVIEW_PROMPT.md": {
@@ -225,8 +225,8 @@
     "transformation": null
   },
   "docs/MODAL_RESULTS.md": {
-    "sha256": "284bdd72d699722fc35650f436ec04d67ea098b6ff8f12663f3c9fc733852a11",
-    "source_sha256": "284bdd72d699722fc35650f436ec04d67ea098b6ff8f12663f3c9fc733852a11",
+    "sha256": "23dd5b75c8929aca1bf8a8e0a25970807e4b5cbbad2d430ca3021dcbd5231e38",
+    "source_sha256": "23dd5b75c8929aca1bf8a8e0a25970807e4b5cbbad2d430ca3021dcbd5231e38",
     "transformation": null
   },
   "docs/MODEL_PREFERENCE.md": {
@@ -265,8 +265,8 @@
     "transformation": null
   },
   "docs/RECOMMENDATIONS.md": {
-    "sha256": "124feb04994fe4dac5e5be20f5930bd964572f4806087ea8ce6843fd823523ff",
-    "source_sha256": "124feb04994fe4dac5e5be20f5930bd964572f4806087ea8ce6843fd823523ff",
+    "sha256": "09e64a40997b3f62f6a1676a9c139b0719a04053829c8c56d18ac2176db6a654",
+    "source_sha256": "09e64a40997b3f62f6a1676a9c139b0719a04053829c8c56d18ac2176db6a654",
     "transformation": null
   },
   "docs/REFERENCES.md": {
@@ -2927,6 +2927,11 @@
   "results/scored-pass1/manifest.json": {
     "sha256": "430492cd2f0a4b92c51071532519ea616884a8e2ba5214820013b052e5cf5a17",
     "source_sha256": "430492cd2f0a4b92c51071532519ea616884a8e2ba5214820013b052e5cf5a17",
+    "transformation": null
+  },
+  "results/scored-pass1/publication.json": {
+    "sha256": "525c577a6684ade63c27fc9c6420df40569bf17662f6845cecb59e60dad806c5",
+    "source_sha256": "525c577a6684ade63c27fc9c6420df40569bf17662f6845cecb59e60dad806c5",
     "transformation": null
   },
   "results/scored-pass1/quota-after-five.json": {

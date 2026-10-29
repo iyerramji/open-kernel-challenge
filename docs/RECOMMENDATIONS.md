@@ -6,13 +6,13 @@ Date: October29,2026. Scope: muse_bf16_proj on H200. Every performance statement
 
 ## Decision
 
-Keep **v12 as the official reference**. Keep **v30 as the measured Modal performance reference** and use validated **v33** for the next portability review; v33 preserves its performance choices and checks the cuBLASLt algorithm records explicitly. The highest-value immediate work is to make the existing gain robust and confirm it officially when unscored quota is available. Do not infer a new official score from Modal measurements.
+Select **v21 as the provisional official best**, scored at **1.158264x**. Keep **v34 (1.156021x)** as a close alternative with overlapping uncertainty. v33 remains the checked Lt implementation used to build v34. The first official-confirmation pass is complete; future work should need a new concrete hypothesis, not a noisy-score chase. Modal evidence remains separate.
 
 Independent reviewers found no obvious v30 indexing or precision error. They found missing exact-path outlier coverage, runtime-specific ctypes/heuristic assumptions, absent resource cleanup, and a serial-stream scratch-workspace assumption. This review addresses the first two in new revisions and documents the remaining limits.
 
 ## Evidence classes
 
-- [Official results](OFFICIAL_RESULTS.md): challenge checks, official timing method and reported intervals. Selected v12:1.135028x.
+- [Official results](OFFICIAL_RESULTS.md): challenge checks, official timing method and reported intervals. Selected scored v21:1.158264x; earlier unscored v12:1.135028x.
 - [Modal results](MODAL_RESULTS.md): paid development experiments, raw CUDA-graph timing with no official fixed-cost subtraction. v30/v24 measured1.010833x in the prior full-workload paired run; this is not an official score.
 - Predictions: score-sensitivity arithmetic and implementation hypotheses. Neither becomes a measured claim until tested.
 
@@ -30,7 +30,7 @@ Exact historical source and returned artifacts are never overwritten. Older summ
 
 | Priority | Experiment | Why | Acceptance / stopping rule |
 |---|---|---|---|
-| 1 | Official unscored validation of the frozen checked Lt candidate | Only the official runtime can establish compatibility, screening and score | Refresh quota; run exact frozen source once; archive all artifacts. No scored submission. |
+| Completed | Official validation of six candidates | All six passed screening and correctness; v21 has highest point estimate | Preserve remaining four scored attempts; do not alter code to evade deduplication. |
 | 2 | Reproducibility and portability hardening | Existing QKV gains are stronger than speculative alternatives | Record cuBLAS version, algorithm configuration and full target validity. Replace ordinal dependence with supported configuration selection if feasible; never assume algorithm IDs/opaque bytes transfer across versions. |
 | 3a | Integrate cuDNN pooler128 in a separate candidate | Target gain repeated at roughly 2%; only ~0.1% hypothetical aggregate impact | Warm/prebuild plans, preallocate output during capture, validate full suite and repeat combined workload. Stop if integration removes the gain. |
 | 3b | Nearby QKV descriptor-specific regions, M127/129/255/257 | Current exact-shape dispatch is allowed but nearby behavior should be understood | Create descriptors for the actual M, never reuse128/256 descriptors. Bound to existing layouts and a small returned set; freeze only independently repeated wins. |
@@ -56,7 +56,7 @@ The diagnostic timer saves raw samples but does not reproduce the judge's replay
 
 ## Execution policy
 
-One H200 at a time; preserve every revision including failures, unsupported APIs and slower results. Original cumulative Modal ceiling remains $30, not a fresh budget per turn. Latest observed metered usage is $2.54; credits currently offset billed cost, and accounting can lag. All apps completed and the container list was verified empty. Check live usage and containers after each pass. Do not submit scored entries or change the official working file without established evidence. No persistent GPU deployment.
+One H200 at a time; preserve every revision including failures, unsupported APIs and slower results. Original cumulative Modal ceiling remains $30, not a fresh budget per turn. Latest observed metered usage is $2.54; credits currently offset billed cost, and accounting can lag. All apps completed and the container list was verified empty. Check live usage and containers after each pass. Scored submissions were authorized for this pass; six of ten attempts were used. The official working file is now the exact best scored v21 source. No persistent GPU deployment.
 
 ## Primary sources and skills
 
